@@ -10,3 +10,7 @@
 - [09JVM探究](./docs/03狂神说系列笔记/09JVM探究.md)
 - [10POI和EasyExcel](./docs/03狂神说系列笔记/10POI和EasyExcel.md)
 - [11JavaScript&JQuery](./docs/03狂神说系列笔记/11JavaScript&JQuery.md)
+- [12Linux](./docs/03狂神说系列笔记/12Linux.md)
+- [13Vue](./docs/03狂神说系列笔记/13Vue.md)
+- [14Docker](./docs/03狂神说系列笔记/14Docker.md)
+- [15Redis](./docs/03狂神说系列笔记/15Redis.md)
