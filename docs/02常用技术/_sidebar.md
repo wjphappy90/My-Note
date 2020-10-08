@@ -40,4 +40,6 @@
 
 [09Docker](./docs/02常用技术/_sidebar.md)
 
-- [09Docker](./docs/02常用技术/09Docker/01Docker.md)
+- [00Linux安装Docker](./docs/02常用技术/09Docker/00Linux安装Docker.md)
+
+- [01Docker](./docs/02常用技术/09Docker/01Docker.md)
