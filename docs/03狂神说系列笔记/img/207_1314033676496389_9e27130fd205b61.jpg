@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="data-spm" content="a2c6h" />
+
+    <title>问答-技术问答-汇集知识碎片解决技术难题-阿里云开发者社区-阿里云</title>
+
+    <meta name="keywords" content="java,大数据计算,数据库,运维" />
+    <meta name="description" content="问答是阿里云开发者社区中聚焦技术问答的频道，以汇集知识碎片，解决技术难题为根本。有数十万专业技术问题与答案，技术领域覆盖java、大数据计算、数据库、python、云原生、微服务、工智能、运维等。" />
+
+    <meta property="og:title" content="问答-技术问答-汇集知识碎片解决技术难题-阿里云开发者社区-阿里云" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="问答是阿里云开发者社区中聚焦技术问答的频道，以汇集知识碎片，解决技术难题为根本。有数十万专业技术问题与答案，技术领域覆盖java、大数据计算、数据库、python、云原生、微服务、工智能、运维等。" />
+    <meta property="og:image" content="https://img.alicdn.com/tfs/TB1LCE1aQ5E3KVjSZFCXXbuzXXa-200-200.png" />
+    <meta property="og:url" content="https://developer.aliyun.com/ask/" />
+
+    <link rel="canonical" href="https://developer.aliyun.com/ask/" />
+    <link rel="stylesheet" href="//g.alicdn.com/aliyun/developer-aliyun-com-fe/1.5.1/css/questionsHome.css" />
+
+    <script type="text/javascript" src="//g.alicdn.com/aliyun/static/0.0.11/??react.js,react-dom.js" nonce="8b3cbfcee4c948299720701e07303e8b"></script>
+    <script type="text/javascript" nonce="8b3cbfcee4c948299720701e07303e8b" src="//www.aliyun.com/rgn/aliyun_assets?renderer=js&amp;nonce=8b3cbfcee4c948299720701e07303e8b"></script>
+
+
+    <script nonce="8b3cbfcee4c948299720701e07303e8b">
+        var GLOBAL_CONFIG = {
+            "groupCode": null,
+            "pageScore": 13604,
+            "pageObjectId": 283596
+
+        };
+    </script>
+    <script nonce="8b3cbfcee4c948299720701e07303e8b" src="//www.aliyun.com/assets/publish/ace-base-assets?nonce=8b3cbfcee4c948299720701e07303e8b"></script>
+    <script type="text/javascript" nonce="8b3cbfcee4c948299720701e07303e8b" src="//www.aliyun.com/homon-lego/developer?nonce=8b3cbfcee4c948299720701e07303e8b"></script>
+</head>
+<body data-spm="13066354"><script type="text/javascript"
+id="beacon-aplus"
+src="//g.alicdn.com/alilog/mlog/aplus_v2.js"
+exparams="category=&userid=&aplus&yunid=&yunpk=&channel=&cps="
+nonce="8b3cbfcee4c948299720701e07303e8b"
+cspx="8b3cbfcee4c948299720701e07303e8b"
+async>
+</script>
+
+<h1 class="dev-seo-tag">问答-技术问答-汇集知识碎片解决技术难题-阿里云开发者社区-阿里云</h1>
+
+<div class="question-home">
+    <div class="question-home-left">
+        <div class="question-home-search">
+            <h3 class="question-home-title">问答</h3>
+            <p class="question-home-desc">汇集知识碎片，解决技术难题</p>
+            <div class="question-home-input" data-spm-click="gostr=/developer.ask_home.search;locaid=dsearch">
+                <i class="search-icon"></i>
+                <input id="question-search" placeholder="请输入您要查询的问题" type="search" />
+            </div>
+            <a target="_blank" class="public-button orange-button question-home-link" data-spm-click="gostr=/developer.ask_home.new;locaid=dnewAsk" href="/ask/new">
+                <img src="https://img.alicdn.com/tfs/TB1SeiwXND1gK0jSZFyXXciOVXa-28-30.png" />
+                我要提问
+            </a>
+        </div>
+        <div class="question-home-tab">
+            <ul class="question tab-title conditionArea">
+
+                
+                    <li class="active" data-spm-click="gostr=/developer.ask_home.menu;locaid=dhottest">热门</li>
+                    <li data-spm-click="gostr=/developer.ask_home.menu;locaid=dlatest">最新问题</li>
+                    <li data-spm-click="gostr=/developer.ask_home.menu;locaid=dunsolved">待解答</li>
+                
+
+
+                
+
+            </ul>
+
+            <div class="question question-container">
+                <div id="question-home"></div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest259475">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/259475"></a>
+                        <div class="answers-num have-answer">
+                            <p>1</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                <img src="https://img.alicdn.com/tfs/TB1BKqvXUz1gK0jSZLeXXb9kVXa-24-24.png" />
+                                <p class="title">【精品问答】python技术1000问（2）</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">问问小秘</span>
+                                <span class="time">2019-11-22</span>
+                                <span class="browse">3266浏览量</span>
+                                <span class="answer">回答数 1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest288158">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/288158"></a>
+                        <div class="answers-num have-answer">
+                            <p>2</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                <img src="https://img.alicdn.com/tfs/TB1BKqvXUz1gK0jSZLeXXb9kVXa-24-24.png" />
+                                <p class="title">Apache Flink常见问题汇总【精品问答】</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user medal-icon">黄一刀</span>
+                                <span class="time">2020-05-19</span>
+                                <span class="browse">15605浏览量</span>
+                                <span class="answer">回答数 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><p>收藏~太精彩了~</p></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/0986a04534c44b328ec354b8e6c1b241.jpg" />
+                          问问小秘
+                        </span>
+                            
+                            
+                            <span class="like">赞 1</span>
+                            <span class="comment">评论 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest297298">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/297298"></a>
+                        <div class="answers-num have-answer">
+                            <p>21</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">地摊潮流，如果程序员和程序媛同时摆摊？</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">问问小秘</span>
+                                <span class="time">2020-06-05</span>
+                                <span class="browse">28032浏览量</span>
+                                <span class="answer">回答数 21</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest282939">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/282939"></a>
+                        <div class="answers-num have-answer">
+                            <p>7</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">速戳 | 20位阿里出题专家-备战阿里必不可少的题目</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user medal-icon">Runt</span>
+                                <span class="time">2020-04-15</span>
+                                <span class="browse">27874浏览量</span>
+                                <span class="answer">回答数 7</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><p>感谢分享&#xff0c;大家可以备战阿里云ACP或ACE认证&#xff1a;<a href="https://edu.aliyun.com/certification?userCode&#61;r3yteowb">https://edu.aliyun.com/certification</a></p> 
+<p>无论是求职还是提升自己&#xff0c;都很有用。</p></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/d020e0776dda48fda4ab6e43842a4880.jpeg" />
+                          用数据说话
+                        </span>
+                            
+                            
+                            <span class="like">赞 3</span>
+                            <span class="comment">评论 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest311489">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/311489"></a>
+                        <div class="answers-num have-answer">
+                            <p>63</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">公演｜云开发校园合伙人成团前上手项目公演，let‘s battle！</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">霸道网管</span>
+                                <span class="time">2020-08-19</span>
+                                <span class="browse">21879浏览量</span>
+                                <span class="answer">回答数 63</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><p>2048 Html小游戏 简介&#xff1a;此应用基于阿里云云开发平台&#xff0c;serverless构架。该小游戏玩法与正常2048无任何区别&#xff0c;有键盘&#34;↑&#34;、&#34;↓&#34;、&#34;←&#34;、&#34;→&#34;键控制。网址&#xff1a;</p> 
+<pre><code class="language-js">http://2048.bt7.xyz
+</code></pre></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/97417d94f0df488195e1c77a878a2326.jpg" />
+                          Lin.孟
+                        </span>
+                            
+                            
+                            <span class="like">赞 160</span>
+                            <span class="comment">评论 2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest291238">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/291238"></a>
+                        <div class="answers-num have-answer">
+                            <p>4</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">SaaS模式云数据仓库MaxCompute 百问百答合集（持续更新20200921）</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user medal-icon">亢海鹏</span>
+                                <span class="time">2020-05-29</span>
+                                <span class="browse">18268浏览量</span>
+                                <span class="answer">回答数 4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><p>大数据可以的&#xff0c;可以阿里云ACP认证大数据方向 <a href="https://dashi.aliyun.com/site/cloud/acp">https://dashi.aliyun.com/site/cloud/acp</a></p></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/avatar3.jpg" />
+                          云服务器吧
+                        </span>
+                            
+                            
+                            <span class="like">赞 1</span>
+                            <span class="comment">评论 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest302945">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/302945"></a>
+                        <div class="answers-num have-answer">
+                            <p>17</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">和“乔帮主”一起来学习《阿里云运维架构实践秘籍》——【阿里云MVP读书汇】</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">云起君</span>
+                                <span class="time">2020-06-09</span>
+                                <span class="browse">17808浏览量</span>
+                                <span class="answer">回答数 17</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><p><strong>获奖名单公布</strong>&#xff1a; yvonne6688 montos 爱吃鱼的程序员 huc_逆天 创造001 跌倒的小黄瓜 霉 duoHub 不语奈何 游客666 津崎平匡 优选2 苍霞学子</p> 
+<p><strong>请大家在8月15日之前通过钉钉及时联系我哦</strong></p> 
+<p><img src="https://img.alicdn.com/tfs/TB1R5TGPKL2gK0jSZFmXXc7iXXa-369-720.jpg" alt="钉钉联系码.png" /></p> 
+<p>第三讲作业 <img src="https://ucc.alicdn.com/pic/developer-ecology/194f62f89d334e8d8132de80082ad7ff.png" alt="第三讲作业.png" /> 第四讲作业 <img src="https://img.alicdn.com/tfs/TB1P7m9MeH2gK0jSZJnXXaT1FXa-934-522.png" alt="第四讲作业.png" /> 第五讲作业 <img src="https://img.alicdn.com/tfs/TB10Jx_bcVl614jSZKPXXaGjpXa-1432-793.png" alt="第五讲作业.png" /></p></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/avatar3.jpg" />
+                          splmnysxeksv2
+                        </span>
+                            
+                            
+                            <span class="like">赞 0</span>
+                            <span class="comment">评论 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest288127">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/288127"></a>
+                        <div class="answers-num have-answer">
+                            <p>2</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">【科研有你，阿里巴巴研究型实习生520初舞台】 在阿里巴巴做研究型实习生是一种怎样的体验？</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">Shuonan</span>
+                                <span class="time">2020-05-19</span>
+                                <span class="browse">17337浏览量</span>
+                                <span class="answer">回答数 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest286702">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/286702"></a>
+                        <div class="answers-num have-answer">
+                            <p>11</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">【hi聊】2020年5月程序员工资平均14542元，你有什么加薪妙招？</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">问问小秘</span>
+                                <span class="time">2020-05-11</span>
+                                <span class="browse">16097浏览量</span>
+                                <span class="answer">回答数 11</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><pre><code class="language-java">坐标&#xff1a;北京 海淀
+职能&#xff1a;Java界的一名小程序媛
+薪资&#xff1a;16k
+Tips&#xff1a;
+  爱笑的女生运气不会差&#xff1b;
+  保持自信&#xff0c;比如&#xff1a;明明可以靠颜值&#xff0c;可我却非要拼实力(*^▽^*)&#xff1b;
+  多跟领导、同事交流&#xff08;如公司餐厅约饭&#xff09;&#xff1b;
+  高效能人士的七个习惯No.1&#xff1a;积极主动&#xff1b;
+  重视基础、规则、规范&#xff1b;
+</code></pre></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/avatar3.jpg" />
+                          yvonne6688
+                        </span>
+                            
+                            
+                            <span class="like">赞 4</span>
+                            <span class="comment">评论 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest289308">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/289308"></a>
+                        <div class="answers-num have-answer">
+                            <p>2</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">Vue面试题汇总【精品问答】</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">问问小秘</span>
+                                <span class="time">2020-05-25</span>
+                                <span class="browse">15879浏览量</span>
+                                <span class="answer">回答数 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest288395">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/288395"></a>
+                        <div class="answers-num have-answer">
+                            <p>4</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">程序员报错问题大征集启幕喽，更有AirPods、Cherry机械键盘等你拿</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">问问小秘</span>
+                                <span class="time">2020-05-21</span>
+                                <span class="browse">14257浏览量</span>
+                                <span class="answer">回答数 4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><p>欢迎参与哦~</p></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/0986a04534c44b328ec354b8e6c1b241.jpg" />
+                          问问小秘
+                        </span>
+                            
+                            
+                            <span class="like">赞 1</span>
+                            <span class="comment">评论 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest285491">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/285491"></a>
+                        <div class="answers-num have-answer">
+                            <p>3</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">2020年05月编程排行榜-C语言继2015年，重新成为编程排行榜第一名</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user medal-icon">huc_逆天</span>
+                                <span class="time">2020-05-06</span>
+                                <span class="browse">14026浏览量</span>
+                                <span class="answer">回答数 3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest311435">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/311435"></a>
+                        <div class="answers-num have-answer">
+                            <p>766</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">【奖品：Cherry 机械键盘 粉白对装 】谁是最浪漫的程序员？</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">雅纯</span>
+                                <span class="time">2020-08-18</span>
+                                <span class="browse">10125浏览量</span>
+                                <span class="answer">回答数 766</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><p>我是小枫&#xff0c;</p> 
+<p>这封密书 我要送给小霞</p> 
+<p>感谢她&#xff0c;在那最纯真的时代&#xff0c;体悟过最甜的情谊&#xff0c;她更是一种精神力&#xff0c;永驻我心&#xff0c;以期鹊桥重逢&#xff01;</p> 
+<p>纤云弄巧&#xff0c;飞星传恨&#xff0c;银汉迢迢暗度。 金风玉露一相逢&#xff0c;便胜却人间无数。 柔情似水&#xff0c;佳期如梦&#xff0c;忍顾鹊桥归路。 <strong>两情若是久长时&#xff0c;又岂在朝朝暮暮&#xff01;</strong></p> 
+<p>爱情要经得起长久分离的考验&#xff0c;只要能彼此真诚相爱&#xff0c;即使终年天各一方&#xff0c;也比朝夕相伴的庸俗情趣可贵得多。</p> 
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/ec0889889ddf46caac41d04b400990c1.png" alt="云效七夕.png" /> <a href="https://research.devops.aliyun.com/letters/8d21f07b-0143-4974-8ab2-1b1c4a095248?correct&#61;true">H5链接</a></p></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/avatar3.jpg" />
+                          Jam_小枫
+                        </span>
+                            
+                            
+                            <span class="like">赞 17</span>
+                            <span class="comment">评论 20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest282800">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/282800"></a>
+                        <div class="answers-num have-answer">
+                            <p>4</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">思维进阶：阿里高管的思考方式比一般人强在哪？（7000字深度干货）
+</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user medal-icon">剑曼红尘</span>
+                                <span class="time">2020-04-13</span>
+                                <span class="browse">13912浏览量</span>
+                                <span class="answer">回答数 4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><h1>01「思维陷阱」是一个人职场平庸的根本原因</h1> 
+<p>有没有人想过&#xff1a;为什么有些人在职场显得能力特别差&#xff1f;</p> 
+<p>我们生活在一个容易让人焦虑的时代&#xff0c;每天都需要主动或者被动地接受大量的信息&#xff0c;但少有人清醒地知道&#xff0c;这些信息悄悄改变了我们的“思维方式”乃至“行为”&#xff0c;引导我们走进陷阱。</p> 
+<p>如果你不能意识到&#xff0c;你可能正在被“思维陷阱”拖入平庸和焦虑的痛苦中。</p> 
+<p>为了方便理解&#xff0c;我下面列出三种最常见的陷入“思维陷阱”的人&#xff0c;对照看看自己是不是&#xff1a;</p> 
+<ol><li> <p>热衷快餐知识&#xff0c;却不能清醒知道自己无知的人</p> </li><li> <p>习惯什么都“靠自己”的人</p> </li><li> <p>无法一眼看透事物发展背后本质的人</p> </li></ol> 
+<p>**1. 热衷快餐知识 **</p> 
+<p>却不能清醒知道自己无知的人 伴随着知识付费的崛起&#xff0c;近几年出现了大量热衷快餐知识的人_他们是朋友圈的“概念狂人”,对权威、意见领袖的观点非常追捧&#xff0c;关于最新的话题他总能发表看法&#xff0c;他们热衷于走捷径&#xff0c;转发的文章总是散发着贩卖焦虑的气味。</p> 
+<p>但如果与他们深入交流&#xff0c;你会发现&#xff1a;除了这些二手的快餐知识&#xff0c;他们对常识和经典无知的可怕。</p> 
+<p>这些人最大的特点是不知道自己的无知——认为自己脑子中的想法是什么样&#xff0c;世界就是什么样。这种人在职场有一个很难缠的习惯&#xff1a;很喜欢先入为主一个自己坚持的观点&#xff0c;然后再围绕这个观点去寻找支持论据。</p> 
+<p>如果这种人有较高的执行力&#xff0c;那就太可怕了——因为在他们很努力地将片面的理解付诸行动时&#xff0c;你根本无法说服他&#xff0c;一切都要等他让所有人都撞得头破血流停下来才能进行调整。</p> 
+<p>**2. 习惯 **</p> 
+<p>什么都“靠自己”的人 如果一个人看多了鸡汤文里“什么都不如自己可靠”的口号&#xff0c;或者片面理解了近几年常说的“为结果负责”这句话&#xff0c;那他就会走入“靠自己”的思维陷阱。</p> 
+<p>这些人最大的特点就是害怕麻烦别人&#xff0c;害怕拒绝——认为目前事物无法圆满完成的原因&#xff0c;主要是自身实力或资源还不够&#xff0c;所以会一味地增强自身资源以期望达到目标。</p> 
+<p>他们既不能看到别人那里多余的可协作资源&#xff0c;也不能将自己的资源为别人所用。</p> 
+<p>因为害怕暴露出错&#xff0c;他们也不擅长分享和求助。</p> 
+<p>他们会觉得自己深刻理解了“责任”的意义&#xff0c;但是却总是感到每天的工作压力山大&#xff0c;那些习惯在办公室里加班到凌晨但效率低下的员工往往是这种人。</p> 
+<p>**3. 无法一眼看透事物发展背后矛盾本质的人 **</p> 
+<p>《教父》最有名的一句话是“花半秒钟就看透事物本质的人&#xff0c;和一生都看不清事物本质的人&#xff0c;注定是截然不同的命运。”</p> 
+<p>那什么是“事物的本质”呢&#xff1f;</p> 
+<p>其实就是位于事物发展中底层的矛盾。</p> 
+<p>如果一个人看事物或者解决工作难题的时候&#xff0c;没有思考背后的矛盾和规律的习惯&#xff0c;就容易流于表面&#xff0c;他们可能洞察力不错&#xff0c;比起一般人能关注那些细节&#xff0c;但是却缺乏全局观&#xff0c;容易纠结在自己的小世界里。</p> 
+<p>注意&#xff1a;没有日常观察思考“事物发展背后的矛盾”习惯的人&#xff0c;注定无法成长为团队的领导者&#xff01;</p> 
+<p>在职场&#xff0c;他们是需要反复指导和争论&#xff0c;耗费团队沟通成本的下属&#xff0c;在解决问题时&#xff0c;他们是无法快速清晰找到问题抓手的那群人&#xff1b;在生活中&#xff0c;他们往往又会陷入“拎不清”或“选择困难”的麻烦中。</p> 
+<h1>02 那些互联网大神 是如何跳出“思维陷阱”的&#xff1f;</h1> 
+<p>“思维陷阱”就藏在人性的弱点中&#xff0c;它是如此可怕和不易察觉&#xff0c;我们必须保持一些日常思考习惯来对抗它对我们的影响。</p> 
+<p>也许你能从下面三位阿里巴巴高管身上拥有的特质中找到答案&#xff0c;这些习惯帮助他们克服“思维陷阱”在中国最复杂的商业经济体——阿里巴巴中取得了事业上的巨大成就。</p> 
+<p>他们是那些经历过绝望后谷底反弹的人&#xff0c;那些长期默默坚持而又一鸣惊人的人&#xff0c;那些在危急关头敢于独自按下刹车键的人&#xff0c;他们分别是钉钉创始人无招、盒马鲜生创始人侯毅&#xff0c;以及现在的淘宝天猫总裁蒋凡。</p> 
+<p>**1. 钉钉创始人无招 **</p> 
+<p>抛下已知去“观察”外界的习惯 “无招”是花名&#xff0c;如果结合他在阿里的经历看&#xff0c;会发现很有意思。</p> 
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/36e9f234442f45e987b16d13f61b555b.png" alt="1.png" /></p> 
+<p style="text-align:center">钉钉创始人无招</p> 
+<p>2014年&#xff0c;阿里经历了强推社交产品“来往”的巨大挫折&#xff1b;在智能手机全国开始普及的年代&#xff0c;因为社交用户基数大&#xff0c;而且极度高频的入口级特性&#xff0c;社交产品所能带来的安全感是各大互联网厂商都极度渴望的&#xff0c;所以你可以理解为什么马化腾会把微信横空出世称为&#xff1a;抢到第一张移动互联网船票。</p> 
+<p>而陈航和他所在的团队&#xff0c;就是试图通过挑战微信&#xff0c;为阿里赢得安全感的一群人。</p> 
+<p>用再造一个“微信”来挑战微信&#xff0c;结果就是无招需要和团队把一场惨痛的失败消化下来。</p> 
+<p>但有没有人想过&#xff1a;这样的严重挫败陷入的低谷&#xff0c;对一个产品型的团队领导者也许是一件好事——<strong>因为绝望会让一个人抛弃原有的脑子里对世界所有的理解&#xff0c;进入一种彻底放空和内省状态&#xff0c;这时候才能静下心来观察和阅读世界真正的需要。</strong></p> 
+<p>这与悟道的逻辑不谋而合。</p> 
+<p>作为一个产品经理可能会反思&#xff1a;任何大而广的东西一定有弱点&#xff0c;如果说微信的社交面是一条横线&#xff0c;需要观察寻找的&#xff0c;是哪里可以诞生一条尚未挖掘的纵线。</p> 
+<p>那么这条纵线是什么呢&#xff1f;</p> 
+<p>静心向内看就会有答案&#xff0c;那就是阿里生态圈的万千小B企业。</p> 
+<p>如果你进入用户的心中去“观察”他们的想法&#xff0c;你就会用心眼看到后面的答案。</p> 
+<p>之后被外界评价“反人性”的钉钉迅速破圈微信获得了成功&#xff0c;而鹅厂主打“温度”的企业微信却一直不温不火&#xff0c;这个现象背后原因是什么&#xff1f;</p> 
+<p>很多人认为是因为钉钉抓住了老板的强压执行力需求&#xff0c;自上而下地推动市场&#xff0c;所以在微信办公的大环境下撕开了一个缺口。还有人同时认为无招是个冷酷的人。</p> 
+<p>但我现在却不这样认为。</p> 
+<p>在仔细阅读和研究了关于钉钉2015年来&#xff0c;所有无招在公开场合的发言和对钉钉产品的理解后&#xff0c;我认为他是国内少有的具备高度同理心的产品经理型CEO之一。</p> 
+<p>他身上有一种放下固有认知&#xff0c;虚心“观察”用户内心所需的能力&#xff0c;而且这几乎融入了他和团队的日常习惯中。</p> 
+<p>可能连使用者自己都不知道&#xff0c;钉钉的成功最深处&#xff0c;是在碎片化办公的大环境下&#xff0c;人性中饱含的对深度工作专注和效率的追求。而在这一点上&#xff0c;无论是老板还是员工&#xff0c;只要他还算是 “想做事的人” 那就是共通的&#xff01;</p> 
+<p>人们只会说自己要一匹更快的马&#xff0c;但亨利福特却能观察到人心深处对速度的追求&#xff0c;为人们造出汽车。</p> 
+<p><strong>“观察”的不是表面&#xff0c;而应该是人的内心&#xff01;</strong></p> 
+<p>在这个状态中&#xff0c;最重要的是要保持不带任何预设立场的“空”&#xff0c;不先入为主&#xff0c;不画地为牢&#xff0c;带着无知观察世界。</p> 
+<p>你不能带着“已知”去看待市场&#xff1b;不能孤立地&#xff0c;刻板地去读那些所谓的“大数据”&#xff0c;也不能光靠人云亦云来判断用户真正的需求&#xff0c;而要用“无知”的心态去接近和观察用户——那些一个个自然人的情绪和需要&#xff0c;以人为本。</p> 
+<p>不然&#xff0c;就会像百度沉迷于搜索引擎的修补&#xff0c;放出了头条&#xff1b;腾讯放弃了对用户工作外时间使用的的观察&#xff0c;做大了抖音。</p> 
+<p>如果他们的产品经理愿意走出北上广高大上的写字楼&#xff0c;走到他们真正需要服务的“群众”中去&#xff0c;结合数据和实践&#xff0c;也许就会“观察”到——哦~原来世界不是自己坐在角落里想象的那样。</p> 
+<p>钉钉所有的员工&#xff0c;入职后第一课就是被要求放下已知&#xff0c;带着空杯进入那些小B企业中&#xff0c;同工同吃&#xff0c;“观察”和阅读用户内心真正的需要。</p> 
+<p><strong>“无”招胜有招</strong>——《笑傲江湖》里风清扬传给令狐冲的第一句话。</p> 
+<p>**2. 盒马鲜生创始人侯毅 **</p> 
+<p>保持“关联性”思考的习惯 说完钉钉的无招&#xff0c;我们再看看盒马的侯毅。</p> 
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/5a659caa29714063b00a591c12dc2a90.png" alt="2.png" /></p> 
+<p style="text-align:center">盒马鲜生创始人侯毅</p> 
+<p>侯毅这个人很有意思&#xff0c;因为他最早是刘强东的“兄弟”&#xff0c;在京东长期希望推动一个类似盒马的前瞻O2O项目&#xff0c;无奈一直没有人关注&#xff1b;最后被逍遥子识才&#xff0c;多次劝说后&#xff0c;决定加入阿里&#xff0c;盒马鲜生是这么来的&#xff08;这里不得不说&#xff1a;老逍简直比老萧还厉害&#xff09;。</p> 
+<p>盒马鲜生是带火了“新零售”这个概念的明星企业&#xff0c;但很多人其实不懂“新零售”是什么。</p> 
+<p>所谓新零售的准确定义&#xff0c;其实就是在各种资源的关联和协同组合中&#xff0c;寻求一种能大大节约成本&#xff0c;提高价值的新组合。</p> 
+<p>为什么代表人物会是侯毅&#xff1f;</p> 
+<p>你可以理解成&#xff1a;因为长年专注在线下线上相结合的领域&#xff0c;侯毅的脑子有了一个叫“资源相互联系”的魔方&#xff0c;每天他都需要转动几次&#xff0c;去寻找数个变量组合资源中&#xff0c;无限接近“提高价值降低成本”的最优解。</p> 
+<p>所以这样看盒马和侯毅&#xff0c;你就可以突然看懂了&#xff1a;为什么可以推出“盒区房”这种以小博大的品牌亮点&#xff0c;通过捆绑房地产这个敏感话题&#xff0c;达到巨大宣传效果&#xff1b;以及明白为什么在今年的艰难时期&#xff0c;盒马能够快速反应&#xff0c;第一个推出了大显身手的“共享员工”模式了。</p> 
+<p>盒马的品牌是围绕着社区服务来的&#xff0c;线下线上配合的打法中&#xff0c;作为领导者的侯毅永远不能孤立地去思考&#xff0c;如果只想着依靠自己的力量去发展&#xff0c;那就坏事了。</p> 
+<p><strong>保持日常的关联性思考&#xff0c;也有助于让一般人看竞争时&#xff0c;不陷入二元对立的表面理解。</strong></p> 
+<p>用“关联性”的思维来理解阿里的战略&#xff0c;你会发现&#xff1a;任何与阿里展开竞争的企业&#xff0c;他们需要面对的是整个的阿里军团。</p> 
+<p>比如美团面对的是饿了么和口碑吗&#xff1f;那么盒马呢&#xff1f;大润发呢&#xff1f;银泰呢&#xff1f;支付宝呢&#xff1f;阿里云呢&#xff1f;天猫超市呢&#xff1f;</p> 
+<p>所以作为普通人&#xff0c;你可以学到的是<strong>永远不要只想着只用自己的资源和能力去做事。</strong></p> 
+<p>一定要懂得资源之间的“关联性”&#xff0c;不要怕麻烦别人&#xff0c;也许你也能给别人创造价值呢&#xff1f;所以&#xff0c;你也可以在大脑中培养一个“关联性”思考事物的魔方。</p> 
+<p>**3. 淘宝天猫总裁蒋凡 **</p> 
+<p>思索事物发展背后矛盾的习惯 当宣布蒋凡挑大梁的时候&#xff0c;很多人会问&#xff1a;为什么张勇和马云会选择一个少壮派&#xff1f;</p> 
+<p><img src="https://ucc.alicdn.com/pic/developer-ecology/25708ab1aad44ffdb66829b377198f11.jpg" alt="3.jpg" /></p> 
+<p style="text-align:center">淘宝天猫总裁蒋凡</p> 
+<p>也许张勇最能理解蒋凡&#xff1a;因为他们都是那种“在关键时刻孤独地扮演过‘扳道工’角色的人”——无论当时对他们来说&#xff0c;自己在不在最重要的位置上。</p> 
+<p>在蒋凡身上&#xff0c;有着外界所说的“一眼看穿底层逻辑”的能力&#xff1b;也是当下信息爆炸的时代&#xff0c;一种透过乱七八糟的消息迷雾&#xff0c;看到复杂事物中最简单的常识的能力。</p> 
+<p>这种能力&#xff0c;就是要看透推动事物发展背后的矛盾。</p> 
+<p>一个外表复杂的事物&#xff0c;它的本质其实是常识&#xff0c;就像新闻联播里每天在说的“当下主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾”。</p> 
+<p>到底什么是“消费升级”&#xff1f;</p> 
+<p>必须要用矛盾的观点看&#xff1a;</p> 
+<p>我们这些五环内白领在双11抢不到戴森吸尘器的不是真正的主要矛盾&#xff0c;你看不到的地方&#xff0c;“国内的大多数”的小镇青年想买一件耐克配国潮&#xff0c;而自己所处的城镇既没有CBD和没有大商场&#xff0c;下班时间甚至都不知道怎么打发——这才是主要矛盾。</p> 
+<p>去拼多多拼个9块9的手纸&#xff0c;被五环内用户嘲讽为“消费降级”&#xff0c;可你要知道拼多多的手纸不是为你准备的&#xff0c;是为广大“中国的大多数”准备的——这&#xff0c;才是真正的消费升级&#xff01;</p> 
+<p>但在那个年代&#xff0c;并不是所有人都能认清主要矛盾。</p> 
+<p>当时即使在阿里内部&#xff0c;长年的竞争也让一部分人陷入了思维陷阱&#xff0c;认为京东是天猫最大的追赶者。</p> 
+<p>那时候也有人知道小镇青年的重要性&#xff0c;可是当时大家的理解还停留在跑到农村去刷墙。</p> 
+<p>拼多多为什么能够在阿里眼皮下迅速崛起呢&#xff01;&#xff1f;</p> 
+<p>如果说是把握了下沉市场还是流于表面&#xff0c;你用矛盾的观点看本质&#xff1a;</p> 
+<p>第一点&#xff0c;2015~2017年间&#xff0c;大量阿里生态内的小小B端的角色&#xff0c;如底层商家、淘客、羊毛党因为阿里战略调整&#xff0c;对外发生了外溢&#xff0c;这些互联网游牧民走到哪&#xff0c;哪里就形成了新的细小供应链——这些人离开阿里要吃饭啊&#xff0c;这是最主要矛盾。</p> 
+<p>第二点&#xff0c;低价智能机和微信支付相结合&#xff0c;带来了小镇青年整体电商用户盘子扩大——这些人的日常时间要怎么打发&#xff0c;身边可能连个高级商场都没有&#xff0c;这是次主要矛盾。</p> 
+<p>这些东西&#xff0c;身处五环内的你在那个年代里&#xff0c;光看数据是不会马上发现的&#xff0c;只有靠细微的洞察才能感知到&#xff1a;</p> 
+<ol><li> <p>快递小哥的包裹里是不是开始有了别的平台的商品&#xff1f;</p> </li><li> <p>老家父母亲戚的朋友圈&#xff0c;是不是很多东西变了&#xff1f;</p> </li><li> <p>地方台的的综艺节目里面&#xff0c;广告赞助商是不是出现了不认识的牌子&#xff1f;&#xff08;可惜很多北上广人不看电视&#xff09;</p> </li><li> <p>那些像游牧民族一样的羊毛党&#xff0c;被你屏蔽朋友圈的微商妈妈又在忙什么&#xff1f;</p> </li></ol> 
+<p>透过现象看本质&#xff0c;拼多多就是抓住了这些要素悄悄长大的。</p> 
+<p>蒋凡上任后面对这个需要被再次重视的市场&#xff0c;是怎么抓“主要矛盾”的&#xff1f;</p> 
+<ul><li> <p>首先是重新平衡天猫、淘宝的重心&#xff0c;平衡“大多数用户”和B端之间的消费和供给——这不是拿捏尺度的平面问题&#xff0c;而是一个对顶层架构重新分析、设计的立体问题。</p> </li><li> <p>选用模式更适合五环外市场的聚划算做渠道下沉&#xff0c;向低线城市渗透、并且覆盖全年龄段&#xff0c;尽快封堵挤压拼多多的继续扩张</p> </li><li> <p>发力短视频、抖音、网红&#xff0c;直播这些内容场景&#xff0c;再通过大数据精准推送&#xff0c;通过占领用户时间&#xff0c;赢得市场&#xff0c;让B端人群比如主播网红下沉去填补C端的使用手机时间。</p> </li><li> <p>带领品牌商家下沉。之前很多品牌集中在打一二线市场&#xff0c;原有的渠道网络对于下沉市场是滞后的。但随着阿里的强势运营&#xff0c;优质的中部商家做敲门砖品牌迅速得以下沉——提前占住山头&#xff0c;让对手仰攻。</p> </li></ul> 
+<p>随着最近淘宝特价推出&#xff0c;结合淘宝、聚划算、天猫、淘小铺全面出击&#xff0c;阿里军团的刀枪剑戟朝向了同一个方向&#xff1a;B端搭建架构&#xff0c;C端占领时间&#xff0c;蒋凡完成了对北上广人群和下沉市场的一记全垒打&#xff01;</p> 
+<p>目前我们还不知道拼多多的黄铮会如何接下蒋凡这一记硬球——因为占据了品牌优势&#xff0c;拼多多对阿里会长期处于一种“仰攻”状态。</p> 
+<p>这就难受了&#xff0c;毕竟狮子猛回头扑向一只咬自己尾巴的鬣狗很容易&#xff0c;但鬣狗要一口吃下一只狮子却很难。</p> 
+<h1>03 你该如何训练“三种思维” 获得职场成功&#xff01;</h1> 
+<p>写到这里&#xff0c;你也许会说&#xff1a;似乎这些思维习惯也没有多么的深奥啊&#xff1f;这些难道不是常识吗&#xff1f;</p> 
+<p>你说的没错&#xff0c;但那些高手恰恰是将尝试变成了一种日常习惯去反复练习——因为“思维陷阱”会无时无刻存在&#xff0c;人必须通过训练保持觉知才行&#xff0c;所以我们需要复习一下这三种思维习惯&#xff1a;</p> 
+<p>**1. 如何训练 **</p> 
+<p>带着无知“观察”的思维习惯&#xff1f;</p> 
+<p>日常中&#xff0c;很多人会觉得自己的情商和同理心不足&#xff0c;不知道对方心里想什么&#xff0c;要怎么办&#xff1f;</p> 
+<p>这就可以先从“观察”自己的内心的练习开始。</p> 
+<p>练习“观察”的方式&#xff1a;</p> 
+<p style="text-align:center">保持空无&#xff0c;抛下预设 ▼ 用客体视角觉察出自己内心与行为的关系 ▼ 再试着深入“阅读”他人内心与行为的关系 ▼ 结合规律&#xff0c;分析出外界真实的需要 ▼ 在生活与工作中做出策略调整或反应 ▼ 保持练习&#xff0c;达到情商和洞察力的提高</p> 
+<p>如果观察熟练&#xff0c;可以用这个方法去看世界和他人的情绪&#xff0c;进而搞明白对方真正的需要&#xff0c;即使是对方没有清晰表达出来的。</p> 
+<p>打个比方&#xff1a;春节时期&#xff0c;网上那种对于钟南山敬佩和对湖北一些事情愤怒的两极声音&#xff0c;如果你用心观察&#xff0c;你会发现他们的底层其实是同一种情绪“恐惧”——恐惧引发了行为&#xff0c;无论是愤怒还是寻找安全感。</p> 
+<p>再打个比方&#xff1a;如你单位中有一个人&#xff0c;别人都说这个人是自私自利的小人&#xff1b;你通过“观察”发现&#xff0c;原来对方只是个内心缺乏安全感的可怜人&#xff0c;所以也就可以在职场打交道中理解和推测出对方的想法和行为&#xff0c;读出对方真正的内心需要。</p> 
+<p>做市场运营&#xff0c;产品经理&#xff0c;品牌定位&#xff0c;尤其需要这种“观察”他人内心真正需要的能力。</p> 
+<p>**2. 如何训练 **</p> 
+<p>保持“关联性”思考的习惯&#xff1f;</p> 
+<p>如何培养“关联性”思维&#xff0c;在职场拿到资源&#xff0c;产生更好的协作&#xff1f;</p> 
+<p>练习“关联性”思维的方式&#xff1a;</p> 
+<p>抛开过去那种任何事都想着“自己干”的想法&#xff0c;问自己三个问题&#xff1a;</p> 
+<ol><li> <p>我现在要做的事情&#xff0c;有没有利他性&#xff1f;</p> </li><li> <p>可以不可以与他人形成合力&#xff1f;</p> </li><li> <p>最终取得的成果&#xff0c;能不能多方共享&#xff1f;</p> </li></ol> 
+<p>如果三个问题想清楚了没问题&#xff0c;那么不怕拒绝&#xff0c;厚着脸皮干就完了&#xff01;</p> 
+<p>如果三个问题想清楚了没问题&#xff0c;那么不怕拒绝&#xff0c;厚着脸皮干就完了&#xff01;</p> 
+<p>日常要留心&#xff0c;自己和他人身上&#xff0c;有哪些可以“做成事”的资源&#xff0c;这并不是要人学会自利&#xff0c;而是需要培养自己的协作性&#xff1b;自己的专业知识&#xff0c;钱&#xff0c;甚至体力&#xff0c;时间&#xff0c;人脉圈&#xff0c;都是能一起互相协作的资源。</p> 
+<p>除了人与人的资源关联性&#xff0c;还可以培养物与物相互跨界联系的能力。</p> 
+<p>比如在阿里&#xff0c;训练公关的新闻策划能力&#xff0c;就有一种称之为“两只试管法”的日常思考方法。</p> 
+<p>你可以想象成左手握一个产品试管&#xff0c;右手握一个情绪试管&#xff0c;然后两种试剂倒在了一起&#xff0c;产生神奇的化学反应。</p> 
+<p>比如&#xff1a;</p> 
+<blockquote> 
+ <p>盒马鲜生&#xff08;线下的果蔬生鲜服务设施/一种都市快节奏生活方式&#xff09;&#43; 房价&#xff08;情绪饱满的高敏感民生话题&#xff09;&#61; 品牌概念&#xff1a;盒区房 进口水果 &#43; 北上广的生活压力&#xff08;情绪饱满的消费焦虑&#xff09;&#61; 热门话题&#xff1a;车厘子自由</p> 
+</blockquote> 
+<p>“关联性”思维练习配合“观察”运用在策划和创意里&#xff0c;是不是非常有趣&#xff1f;</p> 
+<p>**3. 如何训练 **</p> 
+<p>“看穿事物底层矛盾”的思维习惯&#xff1f; 看事物的底层逻辑&#xff0c;也同样需要上面的两种思维。</p> 
+<p>日常可以多读读经典&#xff0c;少接触如今的“时髦概念书”以免被先入为主污染&#xff0c;枕头边可以放一本《毛选》&#xff0c;其中《矛盾论》和《实践论》是精华。</p> 
+<p>日常遇到争议性的事情&#xff0c;不要着急下判断&#xff0c;也不要站队&#xff1b;就站在旁观者的角度&#xff0c;思考思考为什么双方会这么想&#xff0c;他们各自有哪些需要没有被满足&#xff1f;</p> 
+<p>渐渐地&#xff0c;在别人眼中&#xff0c;你成了一开口就可以直击问题本质的人。</p> 
+<p>等到熟练之后&#xff0c;再拿来看一个人群或者一片市场&#xff0c;思考和实践调研他们真正的供需中&#xff0c;有哪些地方是目前供需所不平衡的&#xff0c;在这样不平衡产生的痛点中&#xff0c;出现了什么替代方案&#xff1f;</p> 
+<p>以上就是我所分享的练习方法。</p> 
+<p>最后补充一点&#xff1a;如果有一件事你觉得一定会如此&#xff0c;那么保险起见尝试从相反的方向推论看有没有漏洞。</p> 
+<p>你还可以经常对外分享自己的心得和观点&#xff08;我自己就在用这种方式保持二次学习和修正提炼&#xff09;&#xff0c;不要担心出错&#xff0c;通过理性的交流和思辨&#xff0c;通过他人的认知进行思辨和修正。</p> 
+<p>通过这种方式收获了解&#xff0c;你会发现&#xff1a;自己其实并不孤独。</p> 
+<blockquote> 
+ <p>参考&#xff1a; 《毛选》 《行为》罗伯特·M·萨波斯基 《智能的结构》霍华德·加德纳 《硬球》克里斯·马修斯 《合作的进化》罗伯特.阿克塞尔罗德 《笑傲江湖》金庸</p> 
+</blockquote> 
+<p>作者&#xff1a;舒扬&#xff0c;笔名舍予兄&#xff08;个人WX&#xff1a;shuyang9451&#xff09;休养前担任阿里健康高级公关专家&#xff0c;目前是一名 长跑 和 行为心理学 爱好者&#xff0c;著有畅销书《共鸣》&#xff0c;一个喜欢深夜在朋友圈发长篇思考的人。事业目标是成为最好的公关&#xff0c;在这条路上将永远是一个学生。</p></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/7676bdc545ce4185ad9f48b9b3d34343.jpg" />
+                          剑曼红尘
+                        </span>
+                            
+                            
+                            <span class="like">赞 3</span>
+                            <span class="comment">评论 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question question-slide" data-spm-click="gostr=/developer.ask_home.timeline;locaid=dhottest283596">
+                    <div class="question-slide-question">
+                        <a class="question-link" target="_blank" href="/ask/283596"></a>
+                        <div class="answers-num have-answer">
+                            <p>15</p>
+                            <p>回答</p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-title">
+                                
+                                <p class="title">泰山版《Java开发手册》孤尽大佬出题 - 据说阿里P7正确率只有50%</p>
+                                
+                            </div>
+                            <div class="question-desc">
+                                <span class="user">游客bnlxddh3fwntw</span>
+                                <span class="time">2020-04-23</span>
+                                <span class="browse">13529浏览量</span>
+                                <span class="answer">回答数 15</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-slide-answer">
+                        <div class="answer-content"><p>1.A 2.B 3.B 4.C 5.D 6.D 7.A 8.D 9.D 10.D</p></div>
+                        <div class="answer-desc">
+                            <span class="user">
+                          <img src="https://ucc.alicdn.com/avatar/0e66606e476347f28e12eec382564374.jpg" />
+                          不期而遇618
+                        </span>
+                            
+                            
+                            <span class="like">赞 1</span>
+                            <span class="comment">评论 0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-more-tip" class="content-tab-list-more">滑动查看更多 <img src=https://img.alicdn.com/tfs/TB1m7Ihaf1H3KVjSZFHXXbKppXa-200-200.png /></div>
+
+        </div>
+    </div>
+    <div class="question-home-right"><!-- exported styles -->
+<link rel="stylesheet" type="text/css" href="//g.alicdn.com/ali-mod/??wb-aliyun-developer-queations-popular-areas/0.0.8/index.css"> 
+<!--region --> 
+<div data-spm="1380850" data-moduleid="0" data-name="wb-aliyun-developer-queations-popular-areas" data-guid="1380850" id="guid-1380850" data-scene-id="2222643" data-scene-version="0" data-hidden="" data-gitgroup="ali-mod" data-ext="" data-engine="tce" class="wb-aliyun-developer-queations-popular-areas J_Module" tms="wb-aliyun-developer-queations-popular-areas/0.0.8" tms-datakey="tce/2222643"> 
+ <div class="module-wrap J_tb_lazyload dbl_tms_module_wrap"> 
+  <!-- 避免用window的全局变量获取数据 --> 
+  <textarea class="schemaData" style="display:none;">
+    {"moduleinfo":{"list_count":[{"count_phone":8,"count":8}],"name":"热门问答领域"},"list":[{"img":"//ucc.alicdn.com/pic/developer-ecology/7a5fdea8685c463aa5540b5253ebc23a.png","num":"40,657","title":"开发与运维","url":"//developer.aliyun.com/group/othertech?tab=ask"},{"img":"//ucc.alicdn.com/pic/developer-ecology/af0720aed0e5432d8c4c75cbefee43e8.png","num":"35,444","title":"云计算","url":"//developer.aliyun.com/group/cloud?tab=ask"},{"img":"//ucc.alicdn.com/pic/developer-ecology/30b90a99cfe34d3f8a6405660d3abf36.png","num":"14,176","title":"数据库","url":"//developer.aliyun.com/group/database?tab=ask"},{"img":"//ucc.alicdn.com/pic/developer-ecology/22b5f7da914a460db70beaac2ab3d93b.png","num":"4,906","title":"大数据","url":"//developer.aliyun.com/group/bigdata?tab=ask"},{"img":"//ucc.alicdn.com/pic/developer-ecology/f3cb3a49590542218c2a132c7f934393.png","num":"3,227","title":"人工智能","url":"//developer.aliyun.com/group/ai?tab=ask"},{"img":"https://ucc.alicdn.com/pic/developer-ecology/9d21de9506624e69a06b5f6b14e2d5ac.png","title":"云原生","url":"//developer.aliyun.com/group/cloudnative?tab=ask"},{"img":"https://ucc.alicdn.com/pic/developer-ecology/41b13f92bfe8435d868b7f82772e9424.png","title":"微服务","url":"//developer.aliyun.com/group/microservice?tab=ask"},{"img":"https://ucc.alicdn.com/pic/developer-ecology/1b438bb90e22434d8ff573679f39f54f.png","num":"7,672","title":"IoT","url":"//developer.aliyun.com/group/iot?tab=ask"}],"countinfo":{"list":{"length_pc":0,"length":0}},"$tmsId":"tce/2222643"}
+  </textarea> 
+  <div class="questions-home-hot"> 
+   <div class="hot-title">
+    热门问答领域
+   </div> 
+   <ul> 
+    <li class="hot-list"> <a href="//developer.aliyun.com/group/othertech?tab=ask" target="_blank"></a> <img src="//ucc.alicdn.com/pic/developer-ecology/7a5fdea8685c463aa5540b5253ebc23a.png" class="hot-list-image"> <p class="hot-list-title">开发与运维</p> <span class="hot-list-answers">89,988问答</span> </li> 
+    <li class="hot-list"> <a href="//developer.aliyun.com/group/cloud?tab=ask" target="_blank"></a> <img src="//ucc.alicdn.com/pic/developer-ecology/af0720aed0e5432d8c4c75cbefee43e8.png" class="hot-list-image"> <p class="hot-list-title">云计算</p> <span class="hot-list-answers">54,072问答</span> </li> 
+    <li class="hot-list"> <a href="//developer.aliyun.com/group/database?tab=ask" target="_blank"></a> <img src="//ucc.alicdn.com/pic/developer-ecology/30b90a99cfe34d3f8a6405660d3abf36.png" class="hot-list-image"> <p class="hot-list-title">数据库</p> <span class="hot-list-answers">33,448问答</span> </li> 
+    <li class="hot-list"> <a href="//developer.aliyun.com/group/bigdata?tab=ask" target="_blank"></a> <img src="//ucc.alicdn.com/pic/developer-ecology/22b5f7da914a460db70beaac2ab3d93b.png" class="hot-list-image"> <p class="hot-list-title">大数据</p> <span class="hot-list-answers">13,292问答</span> </li> 
+    <li class="hot-list"> <a href="//developer.aliyun.com/group/ai?tab=ask" target="_blank"></a> <img src="//ucc.alicdn.com/pic/developer-ecology/f3cb3a49590542218c2a132c7f934393.png" class="hot-list-image"> <p class="hot-list-title">人工智能</p> <span class="hot-list-answers">7,094问答</span> </li> 
+    <li class="hot-list"> <a href="//developer.aliyun.com/group/cloudnative?tab=ask" target="_blank"></a> <img src="https://ucc.alicdn.com/pic/developer-ecology/9d21de9506624e69a06b5f6b14e2d5ac.png" class="hot-list-image"> <p class="hot-list-title">云原生</p> <span class="hot-list-answers">4,168问答</span> </li> 
+    <li class="hot-list"> <a href="//developer.aliyun.com/group/microservice?tab=ask" target="_blank"></a> <img src="https://ucc.alicdn.com/pic/developer-ecology/41b13f92bfe8435d868b7f82772e9424.png" class="hot-list-image"> <p class="hot-list-title">微服务</p> <span class="hot-list-answers">4,898问答</span> </li> 
+    <li class="hot-list"> <a href="//developer.aliyun.com/group/iot?tab=ask" target="_blank"></a> <img src="https://ucc.alicdn.com/pic/developer-ecology/1b438bb90e22434d8ff573679f39f54f.png" class="hot-list-image"> <p class="hot-list-title">IoT</p> <span class="hot-list-answers">2,176问答</span> </li> 
+   </ul> 
+  </div> 
+ </div> 
+</div> 
+<!--region --> 
+<!-- exported scripts --> 
+<script src="//g.alicdn.com/ali-mod/??wb-aliyun-developer-queations-popular-areas/0.0.8/index.js"></script></div>
+</div>
+
+<script nonce="8b3cbfcee4c948299720701e07303e8b" src="//www.aliyun.com/assets/publish/ace-footer?nonce=8b3cbfcee4c948299720701e07303e8b"></script>
+
+</body>
+
+<script type="text/javascript" nonce="8b3cbfcee4c948299720701e07303e8b" src="//g.alicdn.com/aliyun/developer-aliyun-com-fe/1.5.1/scripts/questionsHome.js"></script>
+<script src="//w.cnzz.com/c.php?id=1277657887" language="JavaScript" nonce="8b3cbfcee4c948299720701e07303e8b"></script>
+
+<script type="text/javascript" src="../../js/baidu_push.js" nonce="8b3cbfcee4c948299720701e07303e8b"></script>
+</html>
