@@ -17,3 +17,4 @@
 
 - [01SSM整合](./docs/02常用技术/04SSM/00SSM整合.md)
 - [02Spring](./docs/02常用技术/04SSM/01Spring.md)
+- [03Mybatis](./docs/02常用技术/04SSM/02Mybatis.md)
