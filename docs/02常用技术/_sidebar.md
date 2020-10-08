@@ -20,6 +20,7 @@
 - [01SSM整合](./docs/02常用技术/04SSM/00SSM整合.md)
 - [02Spring](./docs/02常用技术/04SSM/01Spring.md)
 - [03Mybatis](./docs/02常用技术/04SSM/02Mybatis.md)
+- [04Mybatis逆向工程](./docs/02常用技术/04SSM/03Mybatis逆向工程.md)
 
 [05Swagger](./docs/02常用技术/_sidebar.md)
 
