@@ -12,3 +12,7 @@
 
 - [01SpringBoot核心篇](docs/02常用技术/03SpringBoot/01SpringBoot-核心篇.md)
 - [02SpringBoot高级篇](docs/02常用技术/03SpringBoot/02SpringBoot-高级篇.md)
+
+[04SSM](./docs/02常用技术/_sidebar.md)
+
+- [01SSM整合](./docs/02常用技术/04SSM/00SSM整合.md)
