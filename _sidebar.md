@@ -6,3 +6,9 @@
 
 [02常用技术](./docs/02常用技术/_sidebar.md)
 
+[03狂神说系列笔记](./docs/03狂神说系列笔记/_sidebar.md)
+
+[04数据库](./docs/04数据库/_sidebar.md)
+
+[05Java基础知识](./docs/05Java基础知识/_sidebar.md)
+

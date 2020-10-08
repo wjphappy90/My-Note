@@ -20,3 +20,19 @@
 - [01SSM整合](./docs/02常用技术/04SSM/00SSM整合.md)
 - [02Spring](./docs/02常用技术/04SSM/01Spring.md)
 - [03Mybatis](./docs/02常用技术/04SSM/02Mybatis.md)
+
+[05Swagger](./docs/02常用技术/_sidebar.md)
+
+- [Swagger](./docs/02常用技术/05Swagger/01Swagger.md)
+
+[06Webservicer](./docs/02常用技术/_sidebar.md)
+
+- [Webservice](./docs/02常用技术/06Webservice/01Webservice.md)
+
+[07Quartz](./docs/02常用技术/_sidebar.md)
+
+- [Quartz](./docs/02常用技术/07Quartz/01Quartz.md)
+
+[08EasyCode](./docs/02常用技术/_sidebar.md)
+
+- [EasyCode](./docs/02常用技术/08EasyCode/01EasyCode插件.md)
