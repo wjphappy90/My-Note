@@ -10,6 +10,8 @@
 
 [03SpringBoot](./docs/02常用技术/_sidebar.md)
 
+- [00狂神SpringBoot](docs/02常用技术/03SpringBoot/00狂神SpringBoot.md)
+
 - [01SpringBoot核心篇](docs/02常用技术/03SpringBoot/01SpringBoot-核心篇.md)
 - [02SpringBoot高级篇](docs/02常用技术/03SpringBoot/02SpringBoot-高级篇.md)
 
