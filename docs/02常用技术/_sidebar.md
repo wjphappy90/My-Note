@@ -6,7 +6,8 @@
 [02SpringCloud](./docs/02常用技术/_sidebar.md)
 
 - [01环境搭建](./docs/02常用技术/02SpringCloud/01SpringCloud环境搭建.md)
-- [02SpringCloudAlibaba](./docs/02常用技术/02SpringCloud/02SpringCloud(H版&alibaba).md)
+- [02SpringCloudAlibaba-01](./docs/02常用技术/02SpringCloud/02SpringCloud(H版&alibaba).md)
+- [02SpringCloudAlibaba-02](./docs/02常用技术/02SpringCloud/03SpringCloudAlibaba.md)
 
 [03SpringBoot](./docs/02常用技术/_sidebar.md)
 
