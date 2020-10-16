@@ -6,7 +6,7 @@
 
 - [03JWT实战教程](./docs/07B站不良编程人/03JWT实战教程.md)
 
-- [04SpringSecurityOAuth2.0认证授权](./docs/07B站不良编程人/04Spring SecurityOAuth2.0认证授权.md)
+- [04SpringSecurityOAuth2.0认证授权](./docs/07B站不良编程人/04SpringSecurityOAuth2.0认证授权.md)
 
 - [05SpringBoot微框架](./docs/07B站不良编程人/05SpringBoot微框架.md)
 
@@ -28,9 +28,9 @@
 
 - [14Linux](./docs/07B站不良编程人/14Linux.md)
 
-- [15RibbitMQ 实战教程](./docs/07B站不良编程人/15RibbitMQ 实战教程.md)
+- [15RibbitMQ实战教程](./docs/07B站不良编程人/15RibbitMQ实战教程.md)
 
-- [16Shiro 实战教程](./docs/07B站不良编程人/16Shiro 实战教程.md)
+- [16Shiro实战教程](./docs/07B站不良编程人/16Shiro实战教程.md)
 
 - [17SpringCloud微服务工具集v1.1](./docs/07B站不良编程人/17SpringCloud微服务工具集v1.1.md)
 
