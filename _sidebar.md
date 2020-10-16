@@ -12,3 +12,6 @@
 
 [05Java基础知识](./docs/05Java基础知识/_sidebar.md)
 
+[06消息队列](./docs/06消息队列/_sidebar.md)
+
+[07B站不良编程人](./docs/07B站不良编程人/_sidebar.md)
