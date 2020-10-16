@@ -20,7 +20,7 @@
 
 - [10Swagger](./docs/07B站不良编程人/10Swagger.md)
 
-- [11Redus讲解](./docs/07B站不良编程人/11Redus讲解.md)
+- [11Redis讲解](./docs/07B站不良编程人/11Redus讲解.md)
 
 - [12Redis](./docs/07B站不良编程人/12Redis.md)
 
