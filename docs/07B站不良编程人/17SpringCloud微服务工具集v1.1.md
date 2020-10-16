@@ -40,7 +40,7 @@ In short, the microservice architectural style is an approach to developing a si
 
 ### 单体应用
 
-![image-20200708224716035](SpringCloud 微服务工具集v1.1.assets/image-20200708224716035.png)
+![image-20200708224716035](SpringCloud微服务工具集v1.1.assets/image-20200708224716035.png)
 
 ```markdown
 # 1.优点
@@ -55,7 +55,7 @@ In short, the microservice architectural style is an approach to developing a si
 
 ### 微服务架构应用
 
-![image-20200723155352063](SpringCloud 微服务工具集v1.1.assets/image-20200723155352063.png)
+![image-20200723155352063](SpringCloud微服务工具集v1.1.assets/image-20200723155352063.png)
 
 ```markdown
 # 1.优点
@@ -78,7 +78,7 @@ In short, the microservice architectural style is an approach to developing a si
 
 - dubbo官网:http://dubbo.apache.org/zh-cn/docs/user/preface/background.html
 
-![image-20200318082336122](SpringCloud 微服务工具集v1.1.assets/image-20200318082336122.png)
+![image-20200318082336122](SpringCloud微服务工具集v1.1.assets/image-20200318082336122.png)
 
 ```markdown
 # 1. All in One Application 	单一架构
@@ -113,7 +113,7 @@ In short, the microservice architectural style is an approach to developing a si
 - 结论:当前由于RPC协议、注册中心元数据不匹配等问题，在面临微服务基础框架选型时Dubbo与Spring Cloud是只能二选一，这也是为什么大家总是拿Dubbo和Spring Cloud做对比的原因之一。Dubbo之后会积极寻求适配到Spring Cloud生态，比如作为Spring Cloud的二进制通信方案来发挥Dubbo的性能优势，或者Dubbo通过模块化以及对http的支持适配到Spring Cloud。
 ```
 
-![image-20200724143456045](SpringCloud 微服务工具集v1.1.assets/image-20200724143456045.png)
+![image-20200724143456045](SpringCloud微服务工具集v1.1.assets/image-20200724143456045.png)
 
 ```markdown
 # Spring Cloud:
@@ -168,7 +168,7 @@ In short, the microservice architectural style is an approach to developing a si
 ......
 ```
 
-![image-20200724161314786](SpringCloud 微服务工具集v1.1.assets/image-20200724161314786.png)
+![image-20200724161314786](SpringCloud微服务工具集v1.1.assets/image-20200724161314786.png)
 
 ---
 
@@ -205,7 +205,7 @@ Spring Cloud is an umbrella(伞) project consisting of independent projects with
 - Hoxton										版本基于springboot2.2.x版本进行构建
 ```
 
-![image-20200709112427684](SpringCloud 微服务工具集v1.1.assets/image-20200709112427684.png)
+![image-20200709112427684](SpringCloud微服务工具集v1.1.assets/image-20200709112427684.png)
 
 ### 环境搭建
 
@@ -220,7 +220,7 @@ Spring Cloud is an umbrella(伞) project consisting of independent projects with
 # 1.创建springboot项目 指定版本为 2.2.5版本
 ```
 
-![image-20200709115802270](SpringCloud 微服务工具集v1.1.assets/image-20200709115802270.png)
+![image-20200709115802270](SpringCloud微服务工具集v1.1.assets/image-20200709115802270.png)
 
 ```markdown
 # 2.引入springcloud的版本管理
@@ -246,9 +246,9 @@ Spring Cloud is an umbrella(伞) project consisting of independent projects with
 </dependencyManagement>
 ```
 
-![image-20200709120120478](SpringCloud 微服务工具集v1.1.assets/image-20200709120120478.png)
+![image-20200709120120478](SpringCloud微服务工具集v1.1.assets/image-20200709120120478.png)
 
-![image-20200709120209047](SpringCloud 微服务工具集v1.1.assets/image-20200709120209047.png)
+![image-20200709120209047](SpringCloud微服务工具集v1.1.assets/image-20200709120209047.png)
 
 ```markdown
 # 3.完成上述操作springboot与springcloud环境搭建完成
@@ -263,7 +263,7 @@ Spring Cloud is an umbrella(伞) project consisting of independent projects with
 
 所谓服务注册中心就是在整个的微服务架构中单独提出一个服务，这个服务不完成系统的任何的业务功能，仅仅用来完成对整个微服务系统的服务注册和服务发现，以及对服务健康状态的监控和管理功能。
 
-![image-20200709124952525](SpringCloud 微服务工具集v1.1.assets/image-20200709124952525.png)
+![image-20200709124952525](SpringCloud微服务工具集v1.1.assets/image-20200709124952525.png)
 
 ```markdown
 # 1.服务注册中心
@@ -305,7 +305,7 @@ Eureka Client 组件 :   分类服务  商品服务  订单服务(微服务)
 </dependency>
 ```
 
-![image-20200709160918779](SpringCloud 微服务工具集v1.1.assets/image-20200709160918779.png)
+![image-20200709160918779](SpringCloud微服务工具集v1.1.assets/image-20200709160918779.png)
 
 ```markdown
 # 2.编写配置application.properties
@@ -331,20 +331,20 @@ public class Eurekaserver8761Application {
 }
 ```
 
-![image-20200709162043210](SpringCloud 微服务工具集v1.1.assets/image-20200709162043210.png)
+![image-20200709162043210](SpringCloud微服务工具集v1.1.assets/image-20200709162043210.png)
 
 ```markdown
 # 4.访问Eureka的服务注册页面
 - http://localhost:8761
 ```
 
-![image-20200709161916871](SpringCloud 微服务工具集v1.1.assets/image-20200709161916871.png)
+![image-20200709161916871](SpringCloud微服务工具集v1.1.assets/image-20200709161916871.png)
 
 ```markdown
 # 5.虽然能看到管理界面为什么项目启动控制台报错? eureka server 服务注册中心 & client 微服务
 ```
 
-![image-20200709162307608](SpringCloud 微服务工具集v1.1.assets/image-20200709162307608.png)
+![image-20200709162307608](SpringCloud微服务工具集v1.1.assets/image-20200709162307608.png)
 
 ```markdown
 - 出现上述问题原因:eureka组件包含 eurekaserver 和 eurekaclient。server是一个服务注册中心,用来接受客户端的注册。client的特性会让当前启动的服务把自己作为eureka的客户端进行服务中心的注册,当项目启动时服务注册中心还没有创建好,所以找我不到服务的客户端组件就直接报错了，当启动成功服务注册中心创建好了，日后client也能进行注册，就不再报错啦！
@@ -362,13 +362,13 @@ eureka.client.register-with-eureka=false    #不再将自己同时作为客户�
 eureka.client.fetch-registry=false				  #关闭作为客户端时从eureka server获取服务信息
 ```
 
-![image-20200709163511121](SpringCloud 微服务工具集v1.1.assets/image-20200709163511121.png)
+![image-20200709163511121](SpringCloud微服务工具集v1.1.assets/image-20200709163511121.png)
 
 ```markdown
 # 7.再次启动,当前应用就是一个单纯Eureka Server,控制器也不再报错
 ```
 
-![image-20200709163630273](SpringCloud 微服务工具集v1.1.assets/image-20200709163630273.png)
+![image-20200709163630273](SpringCloud微服务工具集v1.1.assets/image-20200709163630273.png)
 
 ##### 开发Eureka Client 
 
@@ -384,7 +384,7 @@ eureka.client.fetch-registry=false				  #关闭作为客户端时从eureka serve
 </dependency>
 ```
 
-![image-20200709164110003](SpringCloud 微服务工具集v1.1.assets/image-20200709164110003.png)
+![image-20200709164110003](SpringCloud微服务工具集v1.1.assets/image-20200709164110003.png)
 
 ```markdown
 # 2.编写配置application.properties
@@ -396,7 +396,7 @@ spring.application.name=eurekaclient8888						#服务名称唯一标识
 eureka.client.service-url.defaultZone=http://localhost:8761/eureka #eureka注册中心地址
 ```
 
-![image-20200709164404396](SpringCloud 微服务工具集v1.1.assets/image-20200709164404396.png)
+![image-20200709164404396](SpringCloud微服务工具集v1.1.assets/image-20200709164404396.png)
 
 ```markdown
 # 3.开启eureka客户端加入注解
@@ -412,19 +412,19 @@ public class Eurekaclient8888Application {
 }
 ```
 
-![image-20200709164505482](SpringCloud 微服务工具集v1.1.assets/image-20200709164505482.png)
+![image-20200709164505482](SpringCloud微服务工具集v1.1.assets/image-20200709164505482.png)
 
 ```markdown
 # 4.启动之前的8761的服务注册中心,在启动eureka客户端服务
 ```
 
-![image-20200709164622017](SpringCloud 微服务工具集v1.1.assets/image-20200709164622017.png)
+![image-20200709164622017](SpringCloud微服务工具集v1.1.assets/image-20200709164622017.png)
 
 ```markdown
 # 5.查看eureka server的服务注册情况
 ```
 
-![image-20200709164729870](SpringCloud 微服务工具集v1.1.assets/image-20200709164729870.png)
+![image-20200709164729870](SpringCloud微服务工具集v1.1.assets/image-20200709164729870.png)
 
 ##### eureka自我保护机制
 
@@ -433,7 +433,7 @@ public class Eurekaclient8888Application {
 - EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
 ```
 
-![image-20200709171532408](SpringCloud 微服务工具集v1.1.assets/image-20200709171532408.png)
+![image-20200709171532408](SpringCloud微服务工具集v1.1.assets/image-20200709171532408.png)
 
 ```markdown
 # 1.自我保护机制
@@ -448,7 +448,7 @@ eureka.server.enable-self-preservation=false  #关闭自我保护
 eureka.server.eviction-interval-timer-in-ms=3000 #超时3s自动清除
 ```
 
-![image-20200709231727148](SpringCloud 微服务工具集v1.1.assets/image-20200709231727148.png)
+![image-20200709231727148](SpringCloud微服务工具集v1.1.assets/image-20200709231727148.png)
 
 ```markdown
 # 3.微服务修改减短服务心跳的时间
@@ -465,7 +465,7 @@ eureka.instance.lease-renewal-interval-in-seconds=5     #指定客户端多久�
 - `官方并不建议在生产情况下关闭
 ```
 
-![image-20200709232933894](SpringCloud 微服务工具集v1.1.assets/image-20200709232933894.png)
+![image-20200709232933894](SpringCloud微服务工具集v1.1.assets/image-20200709232933894.png)
 
 ##### eureka 停止更新
 
@@ -475,7 +475,7 @@ eureka.instance.lease-renewal-interval-in-seconds=5     #指定客户端多久�
 - 在1.x版本项目还是活跃的,但是在2.x版本中停止维护,出现问题后果自负!!!
 ```
 
-![image-20200709233215860](SpringCloud 微服务工具集v1.1.assets/image-20200709233215860.png)
+![image-20200709233215860](SpringCloud微服务工具集v1.1.assets/image-20200709233215860.png)
 
 consul  服务注册中心  启动consul服务注册中心  运行 
 
@@ -496,9 +496,9 @@ consul 客户端 将springcloud 客户端(微服务)
 - https://www.consul.io/downloads
 ```
 
-![image-20200710103539186](SpringCloud 微服务工具集v1.1.assets/image-20200710103539186.png)
+![image-20200710103539186](SpringCloud微服务工具集v1.1.assets/image-20200710103539186.png)
 
-![image-20200710104357091](SpringCloud 微服务工具集v1.1.assets/image-20200710104357091.png)
+![image-20200710104357091](SpringCloud微服务工具集v1.1.assets/image-20200710104357091.png)
 
 ```markdown
 # 2.安装consul
@@ -506,28 +506,28 @@ consul 客户端 将springcloud 客户端(微服务)
 - 1.解压之后发现consul只有一个脚本文件
 ```
 
-![image-20200710105007805](SpringCloud 微服务工具集v1.1.assets/image-20200710105007805.png)
+![image-20200710105007805](SpringCloud微服务工具集v1.1.assets/image-20200710105007805.png)
 
 ```markdown
 # 3.根据解压缩目录配置环境变量
 - 根据安装目录进行环境变量配置 [这里是macos和linux系统配置]
 ```
 
-![image-20200710105305439](SpringCloud 微服务工具集v1.1.assets/image-20200710105305439.png)
+![image-20200710105305439](SpringCloud微服务工具集v1.1.assets/image-20200710105305439.png)
 
 ```markdown
 # 4.查看consul环境变量是否配置成功,执行命令出现如下信息代表成功
 - consul -v
 ```
 
-![image-20200710105449741](SpringCloud 微服务工具集v1.1.assets/image-20200710105449741.png)
+![image-20200710105449741](SpringCloud微服务工具集v1.1.assets/image-20200710105449741.png)
 
 ```markdown
 # 5.启动consul服务
 - consul agent -dev
 ```
 
-![image-20200710105654356](SpringCloud 微服务工具集v1.1.assets/image-20200710105654356.png)
+![image-20200710105654356](SpringCloud微服务工具集v1.1.assets/image-20200710105654356.png)
 
 ```markdown
 # 6.访问consul的web服务端口
@@ -535,7 +535,7 @@ consul 客户端 将springcloud 客户端(微服务)
 	`consul默认服务端口是8500
 ```
 
-![image-20200710105912943](SpringCloud 微服务工具集v1.1.assets/image-20200710105912943.png)
+![image-20200710105912943](SpringCloud微服务工具集v1.1.assets/image-20200710105912943.png)
 
 ##### 开发consul 客户端即微服务
 
@@ -551,7 +551,7 @@ consul 客户端 将springcloud 客户端(微服务)
 </dependency>
 ```
 
-![image-20200710113855944](SpringCloud 微服务工具集v1.1.assets/image-20200710113855944.png)
+![image-20200710113855944](SpringCloud微服务工具集v1.1.assets/image-20200710113855944.png)
 
 ```markdown
 # 2.编写properties配置
@@ -566,13 +566,13 @@ spring.cloud.consul.discovery.register-health-check=false	    #关闭consu了服
 spring.cloud.consul.discovery.service-name=${spring.application.name} #指定注册的服务名称 默认就是应用名
 ```
 
-![image-20200713135437947](SpringCloud 微服务工具集v1.1.assets/image-20200713135437947.png)
+![image-20200713135437947](SpringCloud微服务工具集v1.1.assets/image-20200713135437947.png)
 
 ```markdown
 # 3.启动服务查看consul界面服务信息
 ```
 
-![image-20200713135359150](SpringCloud 微服务工具集v1.1.assets/image-20200713135359150.png)
+![image-20200713135359150](SpringCloud微服务工具集v1.1.assets/image-20200713135359150.png)
 
 ##### consul 开启健康监控检查
 
@@ -589,7 +589,7 @@ spring.cloud.consul.discovery.service-name=${spring.application.name} #指定注
 </dependency>
 ```
 
-![image-20200713140146813](SpringCloud 微服务工具集v1.1.assets/image-20200713140146813.png)
+![image-20200713140146813](SpringCloud微服务工具集v1.1.assets/image-20200713140146813.png)
 
 ##### consul 关闭健康监控检查
 
@@ -602,9 +602,9 @@ spring.cloud.consul.discovery.register-health-check=false	    #关闭consu了服
 spring.cloud.consul.discovery.service-name=${spring.application.name} #指定注册的服务名称 默认就是应用名
 ```
 
-![image-20200710114321913](SpringCloud 微服务工具集v1.1.assets/image-20200710114321913.png)
+![image-20200710114321913](SpringCloud微服务工具集v1.1.assets/image-20200710114321913.png)
 
-![image-20200710121728014](SpringCloud 微服务工具集v1.1.assets/image-20200710121728014.png)
+![image-20200710121728014](SpringCloud微服务工具集v1.1.assets/image-20200710121728014.png)
 
 ### 不同注册中心区别
 
@@ -626,7 +626,7 @@ spring.cloud.consul.discovery.service-name=${spring.application.name} #指定注
 - 基于Zab协议，Zookeeper可以用于构建具备数据强一致性的服务注册与发现中心，而与此相对地牺牲了服务的可用性和提高了注册需要的时间。  
 ```
 
-![image-20200710135837525](SpringCloud 微服务工具集v1.1.assets/image-20200710135837525.png)
+![image-20200710135837525](SpringCloud微服务工具集v1.1.assets/image-20200710135837525.png)
 
 ----
 
@@ -634,7 +634,7 @@ spring.cloud.consul.discovery.service-name=${spring.application.name} #指定注
 
 接下来在整个微服务架构中,我们比较关心的就是服务间的服务改如何调用,有哪些调用方式?
 
-![image-20200713095528763](SpringCloud 微服务工具集v1.1.assets/image-20200713095528763.png)
+![image-20200713095528763](SpringCloud微服务工具集v1.1.assets/image-20200713095528763.png)
 
 > 总结:`在springcloud中服务间调用方式主要是使用 http restful方式进行服务间调用`
 
@@ -654,9 +654,9 @@ spring.cloud.consul.discovery.service-name=${spring.application.name} #指定注
 	`注意:这里服务仅仅用来测试,没有实际业务意义
 ```
 
-![image-20200713101224125](SpringCloud 微服务工具集v1.1.assets/image-20200713101224125.png)
+![image-20200713101224125](SpringCloud微服务工具集v1.1.assets/image-20200713101224125.png)
 
-![image-20200713101422031](SpringCloud 微服务工具集v1.1.assets/image-20200713101422031.png)
+![image-20200713101422031](SpringCloud微服务工具集v1.1.assets/image-20200713101422031.png)
 
 ```markdown
 # 2.在商品服务中提供服务方法
@@ -679,13 +679,13 @@ public class ProductController {
 }
 ````
 
-![image-20200713101553893](SpringCloud 微服务工具集v1.1.assets/image-20200713101553893.png)
+![image-20200713101553893](SpringCloud微服务工具集v1.1.assets/image-20200713101553893.png)
 
 ```markdown
 # 3.在用户服务中使用restTemplate进行调用
 ```
 
-![image-20200713102053530](SpringCloud 微服务工具集v1.1.assets/image-20200713102053530.png)
+![image-20200713102053530](SpringCloud微服务工具集v1.1.assets/image-20200713102053530.png)
 
 ```java
 @RestController
@@ -707,18 +707,18 @@ public class UserController {
 # 4.启动服务
 ```
 
-![image-20200713102320469](SpringCloud 微服务工具集v1.1.assets/image-20200713102320469.png)
+![image-20200713102320469](SpringCloud微服务工具集v1.1.assets/image-20200713102320469.png)
 
-![image-20200713140350189](SpringCloud 微服务工具集v1.1.assets/image-20200713140350189.png)
+![image-20200713140350189](SpringCloud微服务工具集v1.1.assets/image-20200713140350189.png)
 
 ```markdown
 # 5.测试服务调用
 - 浏览器访问用户服务 http://localhost:9999/user/findAll
 ```
 
-![image-20200713102454337](SpringCloud 微服务工具集v1.1.assets/image-20200713102454337.png)
+![image-20200713102454337](SpringCloud微服务工具集v1.1.assets/image-20200713102454337.png)
 
-![image-20200713102616311](SpringCloud 微服务工具集v1.1.assets/image-20200713102616311.png)
+![image-20200713102616311](SpringCloud微服务工具集v1.1.assets/image-20200713102616311.png)
 
 ```markdown
 # 6.总结
@@ -758,7 +758,7 @@ public class UserController {
 # 2.查看consul client中依赖的ribbon
 ```
 
-![image-20200713140804414](SpringCloud 微服务工具集v1.1.assets/image-20200713140804414.png)
+![image-20200713140804414](SpringCloud微服务工具集v1.1.assets/image-20200713140804414.png)
 
 ```markdown
 # 3.使用restTemplate + ribbon进行服务调用
@@ -837,7 +837,7 @@ String forObject = restTemplate.getForObject("http://服务ID/hello/hello?name="
 	`会先过滤掉由于多次访问故障而处于断路器跳闸状态的服务，然后选择一个并发量最小的服务
 ```
 
-![image-20200713162940968](SpringCloud 微服务工具集v1.1.assets/image-20200713162940968.png)
+![image-20200713162940968](SpringCloud微服务工具集v1.1.assets/image-20200713162940968.png)
 
 #### 3.修改服务的默认负载均衡策略
 
@@ -851,7 +851,7 @@ String forObject = restTemplate.getForObject("http://服务ID/hello/hello?name="
 products.ribbon.NFLoadBalancerRuleClassName=com.netflix.loadbalancer.RandomRule
 ```
 
-![image-20200713163722927](SpringCloud 微服务工具集v1.1.assets/image-20200713163722927.png)
+![image-20200713163722927](SpringCloud微服务工具集v1.1.assets/image-20200713163722927.png)
 
 #### 4.Ribbon停止维护
 
@@ -860,7 +860,7 @@ products.ribbon.NFLoadBalancerRuleClassName=com.netflix.loadbalancer.RandomRule
 - https://github.com/Netflix/ribbon
 ```
 
-![image-20200713195706787](SpringCloud 微服务工具集v1.1.assets/image-20200713195706787.png)
+![image-20200713195706787](SpringCloud微服务工具集v1.1.assets/image-20200713195706787.png)
 
 ---
 
@@ -901,7 +901,7 @@ String restTemplateForObject = restTemplate.getForObject("http://服务名/url?�
 </dependency>
 ```
 
-![image-20200713201342374](SpringCloud 微服务工具集v1.1.assets/image-20200713201342374.png)
+![image-20200713201342374](SpringCloud微服务工具集v1.1.assets/image-20200713201342374.png)
 
 ```markdown
 # 2.入口类加入注解开启OpenFeign支持
@@ -917,7 +917,7 @@ public class Users9999Application {
 }
 ```
 
-![image-20200713201602139](SpringCloud 微服务工具集v1.1.assets/image-20200713201602139.png)
+![image-20200713201602139](SpringCloud微服务工具集v1.1.assets/image-20200713201602139.png)
 
 ```markdown
 # 3.创建一个客户端调用接口
@@ -933,7 +933,7 @@ public interface ProductClient {
 }
 ```
 
-![image-20200713202133954](SpringCloud 微服务工具集v1.1.assets/image-20200713202133954.png)
+![image-20200713202133954](SpringCloud微服务工具集v1.1.assets/image-20200713202133954.png)
 
 ```markdown
 # 4.使用feignClient客户端对象调用服务
@@ -952,14 +952,14 @@ public String findAllFeignClient(){
 }
 ```
 
-![image-20200713202615159](SpringCloud 微服务工具集v1.1.assets/image-20200713202615159.png)
+![image-20200713202615159](SpringCloud微服务工具集v1.1.assets/image-20200713202615159.png)
 
 ```markdown
 # 5.访问并测试服务
 - http://localhost:9999/user/findAllFeignClient
 ```
 
-![image-20200713202802056](SpringCloud 微服务工具集v1.1.assets/image-20200713202802056.png)
+![image-20200713202802056](SpringCloud微服务工具集v1.1.assets/image-20200713202802056.png)
 
 #### 2.调用服务并传参
 
@@ -990,7 +990,7 @@ public Map<String,Object> findOne(String productId){
 }
 ```
 
-![image-20200713203833730](SpringCloud 微服务工具集v1.1.assets/image-20200713203833730.png)
+![image-20200713203833730](SpringCloud微服务工具集v1.1.assets/image-20200713203833730.png)
 
 ```java
 //2.用户服务中在product客户端中声明方法
@@ -1001,7 +1001,7 @@ public interface ProductClient {
 }
 ```
 
-![image-20200713204301830](SpringCloud 微服务工具集v1.1.assets/image-20200713204301830.png)
+![image-20200713204301830](SpringCloud微服务工具集v1.1.assets/image-20200713204301830.png)
 
 ```java
 //3.用户服务中调用并传递参数
@@ -1018,15 +1018,15 @@ public Map<String,Object> test1(String id){
 }
 ```
 
-![image-20200728173210751](SpringCloud 微服务工具集v1.1.assets/image-20200728173210751.png)
+![image-20200728173210751](SpringCloud微服务工具集v1.1.assets/image-20200728173210751.png)
 
 ```markdown
 # 测试访问
 ```
 
-![image-20200713204827577](SpringCloud 微服务工具集v1.1.assets/image-20200713204827577.png)
+![image-20200713204827577](SpringCloud微服务工具集v1.1.assets/image-20200713204827577.png)
 
-![image-20200713204851383](SpringCloud 微服务工具集v1.1.assets/image-20200713204851383.png)
+![image-20200713204851383](SpringCloud微服务工具集v1.1.assets/image-20200713204851383.png)
 
 ###### post方式调用服务传递参数
 
@@ -1050,7 +1050,7 @@ public Map<String,Object> save(String name){
 }
 ```
 
-![image-20200713205125242](SpringCloud 微服务工具集v1.1.assets/image-20200713205125242.png)
+![image-20200713205125242](SpringCloud微服务工具集v1.1.assets/image-20200713205125242.png)
 
 ```java
 //2.用户服务中在product客户端中声明方法
@@ -1062,7 +1062,7 @@ public interface ProductClient {
 }
 ```
 
-![image-20200713205734920](SpringCloud 微服务工具集v1.1.assets/image-20200713205734920.png)
+![image-20200713205734920](SpringCloud微服务工具集v1.1.assets/image-20200713205734920.png)
 
 ```java
 //3.用户服务中调用并传递参数
@@ -1078,15 +1078,15 @@ public String save(String productName){
 }
 ```
 
-![image-20200713205823467](SpringCloud 微服务工具集v1.1.assets/image-20200713205823467.png)
+![image-20200713205823467](SpringCloud微服务工具集v1.1.assets/image-20200713205823467.png)
 
 ```markdown
 # 测试访问
 ```
 
-![image-20200713205919054](SpringCloud 微服务工具集v1.1.assets/image-20200713205919054.png)
+![image-20200713205919054](SpringCloud微服务工具集v1.1.assets/image-20200713205919054.png)
 
-![image-20200713210001477](SpringCloud 微服务工具集v1.1.assets/image-20200713210001477.png)
+![image-20200713210001477](SpringCloud微服务工具集v1.1.assets/image-20200713210001477.png)
 
 ```markdown
 # 2.传递对象类型参数
@@ -1105,7 +1105,7 @@ public class Product {
 }
 ```
 
-![image-20200713210437488](SpringCloud 微服务工具集v1.1.assets/image-20200713210437488.png)
+![image-20200713210437488](SpringCloud微服务工具集v1.1.assets/image-20200713210437488.png)
 
 ```java
 //2.商品服务定义接收对象的方法
@@ -1122,7 +1122,7 @@ public Map<String,Object> saveProduct(@RequestBody Product product){
 
 ```
 
-![image-20200713210641668](SpringCloud 微服务工具集v1.1.assets/image-20200713210641668.png)
+![image-20200713210641668](SpringCloud微服务工具集v1.1.assets/image-20200713210641668.png)
 
 ```java
 //3.将商品对象复制到用户服务中
@@ -1135,7 +1135,7 @@ public interface ProductClient {
 //注意:服务提供方和调用方一定要加入@RequestBody注解 
 ```
 
-![image-20200713211213241](SpringCloud 微服务工具集v1.1.assets/image-20200713211213241.png)
+![image-20200713211213241](SpringCloud微服务工具集v1.1.assets/image-20200713211213241.png)
 
 ```java
 // 5.在用户服务中调用保存商品信息服务
@@ -1152,15 +1152,15 @@ public String saveProduct(Product product){
 }
 ```
 
-![image-20200713211308524](SpringCloud 微服务工具集v1.1.assets/image-20200713211308524.png)
+![image-20200713211308524](SpringCloud微服务工具集v1.1.assets/image-20200713211308524.png)
 
 ```markdown
 # 测试
 ```
 
-![image-20200713211338475](SpringCloud 微服务工具集v1.1.assets/image-20200713211338475.png)
+![image-20200713211338475](SpringCloud微服务工具集v1.1.assets/image-20200713211338475.png)
 
-![image-20200713211402844](SpringCloud 微服务工具集v1.1.assets/image-20200713211402844.png)
+![image-20200713211402844](SpringCloud微服务工具集v1.1.assets/image-20200713211402844.png)
 
 #### 3.OpenFeign超时设置
 
@@ -1175,13 +1175,13 @@ public String saveProduct(Product product){
 - 服务提供方加入线程等待阻塞
 ```
 
-![image-20200713213322984](SpringCloud 微服务工具集v1.1.assets/image-20200713213322984.png)
+![image-20200713213322984](SpringCloud微服务工具集v1.1.assets/image-20200713213322984.png)
 
 ```markdown
 # 2.进行客户端调用
 ```
 
-![image-20200713213415230](SpringCloud 微服务工具集v1.1.assets/image-20200713213415230.png)
+![image-20200713213415230](SpringCloud微服务工具集v1.1.assets/image-20200713213415230.png)
 
 ```markdown
 # 3.修改OpenFeign默认超时时间
@@ -1220,7 +1220,7 @@ logging.level.com.baizhi.feignclients=debug    #指定feign调用客户端对象
 # 2.测试服务调用查看日志
 ```
 
-![image-20200713215108861](SpringCloud 微服务工具集v1.1.assets/image-20200713215108861.png)
+![image-20200713215108861](SpringCloud微服务工具集v1.1.assets/image-20200713215108861.png)
 
 ---
 
@@ -1228,7 +1228,7 @@ logging.level.com.baizhi.feignclients=debug    #指定feign调用客户端对象
 
 ### Hystrix组件
 
-![image-20200715123359665](SpringCloud 微服务工具集v1.1.assets/image-20200715123359665.png)
+![image-20200715123359665](SpringCloud微服务工具集v1.1.assets/image-20200715123359665.png)
 
 In a distributed environment, inevitably some of the many service dependencies will fail. Hystrix is a library that helps you control the interactions between these distributed services by adding latency tolerance and fault tolerance logic. Hystrix does this by isolating points of access between the services, stopping cascading failures across them, and providing fallback options, all of which improve your system’s overall resiliency.														--[摘自官方]
 
@@ -1249,13 +1249,13 @@ In a distributed environment, inevitably some of the many service dependencies w
 - 如存在如下调用链路:
 ```
 
-![image-20200715151728240](SpringCloud 微服务工具集v1.1.assets/image-20200715151728240.png)
+![image-20200715151728240](SpringCloud微服务工具集v1.1.assets/image-20200715151728240.png)
 
 ```markdown
 - 而此时，Service A的流量波动很大，流量经常会突然性增加！那么在这种情况下，就算Service A能扛得住请求，Service B和Service C未必能扛得住这突发的请求。此时，如果Service C因为抗不住请求，变得不可用。那么Service B的请求也会阻塞，慢慢耗尽Service B的线程资源，Service B就会变得不可用。紧接着，Service A也会不可用，这一过程如下图所示
 ```
 
-![image-20200715152623313](SpringCloud 微服务工具集v1.1.assets/image-20200715152623313.png)
+![image-20200715152623313](SpringCloud微服务工具集v1.1.assets/image-20200715152623313.png)
 
 #### 2.服务熔断
 
@@ -1266,7 +1266,7 @@ In a distributed environment, inevitably some of the many service dependencies w
 # 服务熔断图示
 ```
 
-![image-20200717085946385](SpringCloud 微服务工具集v1.1.assets/image-20200717085946385.png)
+![image-20200717085946385](SpringCloud微服务工具集v1.1.assets/image-20200717085946385.png)
 
 #### 3.服务降级
 
@@ -1279,7 +1279,7 @@ In a distributed environment, inevitably some of the many service dependencies w
 # 服务降级图示
 ```
 
-![image-20200717112327729](SpringCloud 微服务工具集v1.1.assets/image-20200717112327729.png)
+![image-20200717112327729](SpringCloud微服务工具集v1.1.assets/image-20200717112327729.png)
 
 #### 4.降级和熔断总结
 
@@ -1319,7 +1319,7 @@ In a distributed environment, inevitably some of the many service dependencies w
 </dependency>
 ```
 
-![image-20200716090932981](SpringCloud 微服务工具集v1.1.assets/image-20200716090932981.png)
+![image-20200716090932981](SpringCloud微服务工具集v1.1.assets/image-20200716090932981.png)
 
 ```markdown
 # 2.开启断路器
@@ -1335,7 +1335,7 @@ public class Products9998Application {
 }
 ```
 
-![image-20200716094200460](SpringCloud 微服务工具集v1.1.assets/image-20200716094200460.png)
+![image-20200716094200460](SpringCloud微服务工具集v1.1.assets/image-20200716094200460.png)
 
 ```markdown
 # 3.使用HystrixCommand注解实现断路
@@ -1358,7 +1358,7 @@ public String testBreakFall(int id){
 }
 ```
 
-![image-20200717090743474](SpringCloud 微服务工具集v1.1.assets/image-20200717090743474.png)
+![image-20200717090743474](SpringCloud微服务工具集v1.1.assets/image-20200717090743474.png)
 
 ```markdown
 # 4.访问测试
@@ -1366,9 +1366,9 @@ public String testBreakFall(int id){
 - 错误参数访问
 ```
 
-![image-20200717090841831](SpringCloud 微服务工具集v1.1.assets/image-20200717090841831.png)
+![image-20200717090841831](SpringCloud微服务工具集v1.1.assets/image-20200717090841831.png)
 
-![image-20200717091028876](SpringCloud 微服务工具集v1.1.assets/image-20200717091028876.png)
+![image-20200717091028876](SpringCloud微服务工具集v1.1.assets/image-20200717091028876.png)
 
 ```markdown
 # 5.总结
@@ -1391,7 +1391,7 @@ A service failure in the lower level of services can cause cascading failure all
 - 5、  一段时间之后（默认是5秒），这个时候断路器是半开状态，会让其中一个请求进行转发。如果成功，断路器会关闭，若失败，继续开启。重复4和5。
 ```
 
-![image-20200717092819616](SpringCloud 微服务工具集v1.1.assets/image-20200717092819616.png)
+![image-20200717092819616](SpringCloud微服务工具集v1.1.assets/image-20200717092819616.png)
 
 ```markdown
 # 7.默认的服务FallBack处理方法
@@ -1412,7 +1412,7 @@ public String testHystrixFallBack(String name) {
 }
 ```
 
-![image-20200716095016332](SpringCloud 微服务工具集v1.1.assets/image-20200716095016332.png)
+![image-20200716095016332](SpringCloud微服务工具集v1.1.assets/image-20200716095016332.png)
 
 #### 6.服务降级的实现
 
@@ -1444,7 +1444,7 @@ public interface ProductClient {
 }
 ```
 
-![image-20200716101101091](SpringCloud 微服务工具集v1.1.assets/image-20200716101101091.png)
+![image-20200716101101091](SpringCloud微服务工具集v1.1.assets/image-20200716101101091.png)
 
 ```markdown
 # 4.开发fallback处理类
@@ -1460,7 +1460,7 @@ public class ProductFallBack implements ProductClient {
 }
 ```
 
-![image-20200717101921108](SpringCloud 微服务工具集v1.1.assets/image-20200717101921108.png)
+![image-20200717101921108](SpringCloud微服务工具集v1.1.assets/image-20200717101921108.png)
 
 **注意:如果服务端降级和客户端降级同时开启,要求服务端降级方法的返回值必须与客户端方法降级的返回值一致!!!**
 
@@ -1471,7 +1471,7 @@ public class ProductFallBack implements ProductClient {
 - Hystrix Dashboard的一个主要优点是它收集了关于每个HystrixCommand的一组度量。Hystrix仪表板以高效的方式显示每个断路器的运行状况。
 ```
 
-![image-20200716161556743](SpringCloud 微服务工具集v1.1.assets/image-20200716161556743.png)
+![image-20200716161556743](SpringCloud微服务工具集v1.1.assets/image-20200716161556743.png)
 
 ```markdown
 # 1.项目中引入依赖
@@ -1499,14 +1499,14 @@ public class Hystrixdashboard9990Application {
 }
 ```
 
-![image-20200717154912206](SpringCloud 微服务工具集v1.1.assets/image-20200717154912206.png)
+![image-20200717154912206](SpringCloud微服务工具集v1.1.assets/image-20200717154912206.png)
 
 ```markdown
 # 3.启动hystrix dashboard应用
 - http://localhost:9990(dashboard端口)/hystrix
 ```
 
-![image-20200717155059512](SpringCloud 微服务工具集v1.1.assets/image-20200717155059512.png)
+![image-20200717155059512](SpringCloud微服务工具集v1.1.assets/image-20200717155059512.png)
 
 ```markdown
 # 4.监控的项目中入口类中加入监控路径配置[新版本坑],并启动监控项目
@@ -1524,19 +1524,19 @@ public ServletRegistrationBean getServlet() {
 }
 ```
 
-![image-20200717155120335](SpringCloud 微服务工具集v1.1.assets/image-20200717155120335.png)
+![image-20200717155120335](SpringCloud微服务工具集v1.1.assets/image-20200717155120335.png)
 
 ```markdown
 # 5.通过监控界面监控
 ```
 
-![image-20200717155258994](SpringCloud 微服务工具集v1.1.assets/image-20200717155258994.png)
+![image-20200717155258994](SpringCloud微服务工具集v1.1.assets/image-20200717155258994.png)
 
 ```markdown
 # 6.点击监控,一致loading,打开控制台发现报错[特别坑]
 ```
 
-![image-20200717155555786](SpringCloud 微服务工具集v1.1.assets/image-20200717155555786.png)
+![image-20200717155555786](SpringCloud微服务工具集v1.1.assets/image-20200717155555786.png)
 
 ```markdown
 # 解决方案
@@ -1550,13 +1550,13 @@ public ServletRegistrationBean getServlet() {
 - 编译jar源文件，重新打包引入后，界面正常响应。
 ```
 
-![image-20200717160636218](SpringCloud 微服务工具集v1.1.assets/image-20200717160636218.png)
+![image-20200717160636218](SpringCloud微服务工具集v1.1.assets/image-20200717160636218.png)
 
 #### 8.Hystrix停止维护
 
-![image-20200717161223806](SpringCloud 微服务工具集v1.1.assets/image-20200717161223806.png)
+![image-20200717161223806](SpringCloud微服务工具集v1.1.assets/image-20200717161223806.png)
 
-![image-20200717161400285](SpringCloud 微服务工具集v1.1.assets/image-20200717161400285.png)
+![image-20200717161400285](SpringCloud微服务工具集v1.1.assets/image-20200717161400285.png)
 
 ```markdown
 # 官方地址:https://github.com/Netflix/Hystrix
@@ -1583,7 +1583,7 @@ public ServletRegistrationBean getServlet() {
 # 3.网关组件在微服务中架构
 ```
 
-![image-20200720171205828](SpringCloud 微服务工具集v1.1.assets/image-20200720171205828.png)
+![image-20200720171205828](SpringCloud微服务工具集v1.1.assets/image-20200720171205828.png)
 
 ### 服务网关组件
 
@@ -1635,7 +1635,7 @@ This project provides a library for building an API Gateway on top of Spring MVC
 </dependency>
 ```
 
-![image-20200720175051402](SpringCloud 微服务工具集v1.1.assets/image-20200720175051402.png)
+![image-20200720175051402](SpringCloud微服务工具集v1.1.assets/image-20200720175051402.png)
 
 - **快捷方式配置路由**
 
@@ -1671,19 +1671,19 @@ server:
 - 直接启动报错:
 ```
 
-![image-20200720212535357](SpringCloud 微服务工具集v1.1.assets/image-20200720212535357.png)
+![image-20200720212535357](SpringCloud微服务工具集v1.1.assets/image-20200720212535357.png)
 
 ```markdown
 - 在启动日志中发现,gateway为了效率使用webflux进行异步非阻塞模型的实现,因此和原来的web包冲突,去掉原来的web即可
 ```
 
-![image-20200720212653494](SpringCloud 微服务工具集v1.1.assets/image-20200720212653494.png)
+![image-20200720212653494](SpringCloud微服务工具集v1.1.assets/image-20200720212653494.png)
 
 ```markdown
 - 再次启动成功启动
 ```
 
-![image-20200720213657788](SpringCloud 微服务工具集v1.1.assets/image-20200720213657788.png)
+![image-20200720213657788](SpringCloud微服务工具集v1.1.assets/image-20200720213657788.png)
 
 ```markdown
 # 4.测试网关路由转发
@@ -1706,7 +1706,7 @@ public class GatewayConfig {
 }
 ```
 
-![image-20200721103141491](SpringCloud 微服务工具集v1.1.assets/image-20200721103141491.png)
+![image-20200721103141491](SpringCloud微服务工具集v1.1.assets/image-20200721103141491.png)
 
 ###### 2.查看网关路由规则列表
 
@@ -1728,7 +1728,7 @@ management:
 - http://localhost:8989/actuator/gateway/routes
 ```
 
-![image-20200720220647899](SpringCloud 微服务工具集v1.1.assets/image-20200720220647899.png)
+![image-20200720220647899](SpringCloud微服务工具集v1.1.assets/image-20200720220647899.png)
 
 ###### 3.配置路由服务负载均衡
 
@@ -1765,9 +1765,9 @@ spring:
           enabled: true 							#开启根据服务名动态获取路由
 ```
 
-![image-20200721110013966](SpringCloud 微服务工具集v1.1.assets/image-20200721110013966.png)
+![image-20200721110013966](SpringCloud微服务工具集v1.1.assets/image-20200721110013966.png)
 
-![image-20200721110040104](SpringCloud 微服务工具集v1.1.assets/image-20200721110040104.png)
+![image-20200721110040104](SpringCloud微服务工具集v1.1.assets/image-20200721110040104.png)
 
 ###### 4.常用路由predicate(断言,验证)
 
@@ -1775,7 +1775,7 @@ spring:
 # 1.Gateway支持多种方式的predicate
 ```
 
-![image-20200721112751340](SpringCloud 微服务工具集v1.1.assets/image-20200721112751340.png)
+![image-20200721112751340](SpringCloud微服务工具集v1.1.assets/image-20200721112751340.png)
 
 ```markdown
 - After=2020-07-21T11:33:33.993+08:00[Asia/Shanghai]  			`指定日期之后的请求进行路由
@@ -1815,7 +1815,7 @@ spring:
             - Header=X-Request-Id, \d+
 ```
 
-![image-20200721152720455](SpringCloud 微服务工具集v1.1.assets/image-20200721152720455.png)
+![image-20200721152720455](SpringCloud微服务工具集v1.1.assets/image-20200721152720455.png)
 
 ###### 5.常用的Filter以及自定义filter
 
@@ -1832,15 +1832,15 @@ Route filters allow the modification of the incoming HTTP request or outgoing HT
 - 当我们有很多个服务时，比如下图中的user-service、order-service、product-service等服务，客户端请求各个服务的Api时，每个服务都需要做相同的事情，比如鉴权、限流、日志输出等。
 ```
 
-![image-20200721161002001](SpringCloud 微服务工具集v1.1.assets/image-20200721161002001.png)
+![image-20200721161002001](SpringCloud微服务工具集v1.1.assets/image-20200721161002001.png)
 
-![image-20200721161421845](SpringCloud 微服务工具集v1.1.assets/image-20200721161421845.png)
+![image-20200721161421845](SpringCloud微服务工具集v1.1.assets/image-20200721161421845.png)
 
 ```markdown
 # 2.使用内置过滤器
 ```
 
-![image-20200721152425733](SpringCloud 微服务工具集v1.1.assets/image-20200721152425733.png)
+![image-20200721152425733](SpringCloud微服务工具集v1.1.assets/image-20200721152425733.png)
 
 ```markdown
 - 更多参加官网:https://cloud.spring.io/spring-cloud-static/spring-cloud-gateway/2.2.3.RELEASE/reference/html/#gatewayfilter-factories
@@ -1892,7 +1892,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
 }
 ```
 
-![image-20200721164304994](SpringCloud 微服务工具集v1.1.assets/image-20200721164304994.png)
+![image-20200721164304994](SpringCloud微服务工具集v1.1.assets/image-20200721164304994.png)
 
 -----
 
@@ -1909,7 +1909,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
 # 1.统一配置中心组件流程图
 ```
 
-![image-20200721180134903](SpringCloud 微服务工具集v1.1.assets/image-20200721180134903.png)
+![image-20200721180134903](SpringCloud微服务工具集v1.1.assets/image-20200721180134903.png)
 
 ### Config Server 开发
 
@@ -1939,7 +1939,7 @@ public class Configserver7878Application {
 }
 ```
 
-![image-20200721182003376](SpringCloud 微服务工具集v1.1.assets/image-20200721182003376.png)
+![image-20200721182003376](SpringCloud微服务工具集v1.1.assets/image-20200721182003376.png)
 
 ```markdown
 # 3.修改配置文件
@@ -1952,28 +1952,28 @@ spring.cloud.consul.host=localhost
 spring.cloud.consul.port=8500
 ```
 
-![image-20200721182105648](SpringCloud 微服务工具集v1.1.assets/image-20200721182105648.png)
+![image-20200721182105648](SpringCloud微服务工具集v1.1.assets/image-20200721182105648.png)
 
 ```markdown
 # 4.直接启动服务报错
 -  没有指定远程仓库的相关配置
 ```
 
-![image-20200721182142000](SpringCloud 微服务工具集v1.1.assets/image-20200721182142000.png)
+![image-20200721182142000](SpringCloud微服务工具集v1.1.assets/image-20200721182142000.png)
 
 ```markdown
 # 5.创建远程仓库
 - github创建一个仓库
 ```
 
-![image-20200721183541178](SpringCloud 微服务工具集v1.1.assets/image-20200721183541178.png)
+![image-20200721183541178](SpringCloud微服务工具集v1.1.assets/image-20200721183541178.png)
 
 ```markdown
 # 6.复制仓库地址
 - https://github.com/chenyn-java/configservers.git
 ```
 
-![image-20200721183727767](SpringCloud 微服务工具集v1.1.assets/image-20200721183727767.png)
+![image-20200721183727767](SpringCloud微服务工具集v1.1.assets/image-20200721183727767.png)
 
 ```markdown
 # 7.在统一配置中心服务中修改配置文件指向远程仓库地址
@@ -1989,7 +1989,7 @@ spring.cloud.config.server.git.uri=https://github.com/chenyn-java/configservers.
 # 8.再次启动统一配置中心
 ```
 
-![image-20200721221656436](SpringCloud 微服务工具集v1.1.assets/image-20200721221656436.png)
+![image-20200721221656436](SpringCloud微服务工具集v1.1.assets/image-20200721221656436.png)
 
 ```markdown
 # 9.拉取远端配置 [三种方式][]
@@ -1998,7 +1998,7 @@ spring.cloud.config.server.git.uri=https://github.com/chenyn-java/configservers.
 - 3. http://localhost:7878/test-xxxx.yml
 ```
 
-![image-20200721221951670](SpringCloud 微服务工具集v1.1.assets/image-20200721221951670.png)
+![image-20200721221951670](SpringCloud微服务工具集v1.1.assets/image-20200721221951670.png)
 
 ```markdown
 # 10.拉取远端配置规则
@@ -2008,14 +2008,14 @@ spring.cloud.config.server.git.uri=https://github.com/chenyn-java/configservers.
 	`profile 代表读取配置文件环境
 ```
 
-![image-20200722105313716](SpringCloud 微服务工具集v1.1.assets/image-20200722105313716.png)
+![image-20200722105313716](SpringCloud微服务工具集v1.1.assets/image-20200722105313716.png)
 
 ```markdown
 # 11.查看拉取配置详细信息
 - http://localhost:7878/client/dev       [client:代表远端配置名称][dev:代表远程配置的环境]
 ```
 
-![image-20200722105950808](SpringCloud 微服务工具集v1.1.assets/image-20200722105950808.png)
+![image-20200722105950808](SpringCloud微服务工具集v1.1.assets/image-20200722105950808.png)
 
 ```markdown
 # 12.指定分支和本地仓库位置
@@ -2066,36 +2066,36 @@ spring.cloud.config.profile=dev														#指定拉取配置文件的环境
 	server.port=9098
 ```
 
-![image-20200722102322149](SpringCloud 微服务工具集v1.1.assets/image-20200722102322149.png)
+![image-20200722102322149](SpringCloud微服务工具集v1.1.assets/image-20200722102322149.png)
 
 ```markdown
 # 4.启动客户端服务进行远程配置拉取测试
 - 直接启动过程中发现无法启动直接报错
 ```
 
-![image-20200722102851999](SpringCloud 微服务工具集v1.1.assets/image-20200722102851999.png)![image-20200722102901146](SpringCloud 微服务工具集v1.1.assets/image-20200722102901146.png)
+![image-20200722102851999](SpringCloud微服务工具集v1.1.assets/image-20200722102851999.png)![image-20200722102901146](SpringCloud微服务工具集v1.1.assets/image-20200722102901146.png)
 
 ```markdown
 # 报错原因
 - 项目中目前使用的是application.properties启动项目,使用这个配置文件在springboot项目启动过程中不会等待远程配置拉取,直接根据配置文件中内容启动,因此当需要注册中心,服务端口等信息时,远程配置还没有拉取到,所以直接报错
 ```
 
-![image-20200722103435260](SpringCloud 微服务工具集v1.1.assets/image-20200722103435260.png)
+![image-20200722103435260](SpringCloud微服务工具集v1.1.assets/image-20200722103435260.png)
 
 ```markdown
 # 解决方案
 - 应该在项目启动时先等待拉取远程配置,拉取远程配置成功之后再根据远程配置信息启动即可,为了完成上述要求springboot官方提供了一种解决方案,就是在使用统一配置中心时应该将微服务的配置文件名修改为bootstrap.(properties|yml),bootstrap.properties作为配置启动项目时,会优先拉取远程配置,远程配置拉取成功之后根据远程配置启动当前应用。
 ```
 
-![image-20200722103823678](SpringCloud 微服务工具集v1.1.assets/image-20200722103823678.png)
+![image-20200722103823678](SpringCloud微服务工具集v1.1.assets/image-20200722103823678.png)
 
 ```markdown
 # 再次启动服务
 ```
 
-![image-20200722103913142](SpringCloud 微服务工具集v1.1.assets/image-20200722103913142.png)
+![image-20200722103913142](SpringCloud微服务工具集v1.1.assets/image-20200722103913142.png)
 
-![image-20200722104031932](SpringCloud 微服务工具集v1.1.assets/image-20200722104031932.png)
+![image-20200722104031932](SpringCloud微服务工具集v1.1.assets/image-20200722104031932.png)
 
 -----
 
@@ -2112,7 +2112,7 @@ spring.cloud.config.profile=dev														#指定拉取配置文件的环境
 management.endpoints.web.exposure.include=*            #开启所有web端点暴露  [推荐使用这种]
 ```
 
-![image-20200730161148097](SpringCloud 微服务工具集v1.1.assets/image-20200730161148097.png)
+![image-20200730161148097](SpringCloud微服务工具集v1.1.assets/image-20200730161148097.png)
 
 ```markdown
 # 3.在需要刷新代码的类中加入刷新配置的注解
@@ -2133,25 +2133,25 @@ public class TestController {
 }
 ```
 
-![image-20200722153537692](SpringCloud 微服务工具集v1.1.assets/image-20200722153537692.png)
+![image-20200722153537692](SpringCloud微服务工具集v1.1.assets/image-20200722153537692.png)
 
 ```markdown
 # 4.在远程配置中加入name并启动测试
 ```
 
-![image-20200722153731602](SpringCloud 微服务工具集v1.1.assets/image-20200722153731602.png)
+![image-20200722153731602](SpringCloud微服务工具集v1.1.assets/image-20200722153731602.png)
 
 ```markdown
 # 5.启动之后直接访问
 ```
 
-![image-20200722153806932](SpringCloud 微服务工具集v1.1.assets/image-20200722153806932.png)
+![image-20200722153806932](SpringCloud微服务工具集v1.1.assets/image-20200722153806932.png)
 
 ```markdown
 # 6.修改远程配置
 ```
 
-![image-20200722203225968](SpringCloud 微服务工具集v1.1.assets/image-20200722203225968.png)
+![image-20200722203225968](SpringCloud微服务工具集v1.1.assets/image-20200722203225968.png)
 
 ```markdown
 # 7.修改之后在访问
@@ -2159,20 +2159,20 @@ public class TestController {
 - 必须调用刷新配置接口才能刷新配置
 ```
 
-![image-20200722203317795](SpringCloud 微服务工具集v1.1.assets/image-20200722203317795.png)
+![image-20200722203317795](SpringCloud微服务工具集v1.1.assets/image-20200722203317795.png)
 
 ```markdown
 # 8.手动调用刷新配置接口
 - curl -X POST http://localhost:9099/actuator/refresh
 ```
 
-![image-20200722203417879](SpringCloud 微服务工具集v1.1.assets/image-20200722203417879.png)
+![image-20200722203417879](SpringCloud微服务工具集v1.1.assets/image-20200722203417879.png)
 
 ```markdown
 # 9.在次访问发现配置已经成功刷新
 ```
 
-![image-20200722203452506](SpringCloud 微服务工具集v1.1.assets/image-20200722203452506.png)
+![image-20200722203452506](SpringCloud微服务工具集v1.1.assets/image-20200722203452506.png)
 
 -----
 
@@ -2192,7 +2192,7 @@ Spring Cloud Bus links nodes of a distributed system with a lightweight message 
 
 ### 实现配置刷新原理
 
-![image-20200723150335451](SpringCloud 微服务工具集v1.1.assets/image-20200723150335451.png)
+![image-20200723150335451](SpringCloud微服务工具集v1.1.assets/image-20200723150335451.png)
 
 ### 搭建RabbitMQ服务
 
@@ -2202,7 +2202,7 @@ Spring Cloud Bus links nodes of a distributed system with a lightweight message 
 [注意:][这里安装包只能用于centos7.x系统]
 ```
 
-![image-20190925220343521](SpringCloud 微服务工具集v1.1.assets/image-20190925220343521.png)
+![image-20190925220343521](SpringCloud微服务工具集v1.1.assets/image-20190925220343521.png)
 
 ```markdown
 
@@ -2227,11 +2227,11 @@ Spring Cloud Bus links nodes of a distributed system with a lightweight message 
 	vim /etc/rabbitmq/rabbitmq.config 
 ```
 
-![image-20190925222230260](SpringCloud 微服务工具集v1.1.assets/image-20190925222230260-3836271.png)
+![image-20190925222230260](SpringCloud微服务工具集v1.1.assets/image-20190925222230260-3836271.png)
 
 将上图中配置文件中红色部分去掉`%%`,以及最后的`,`逗号 修改为下图:
 
-![image-20190925222329200](SpringCloud 微服务工具集v1.1.assets/image-20190925222329200-3836312.png)
+![image-20190925222329200](SpringCloud微服务工具集v1.1.assets/image-20190925222329200-3836312.png)
 
 ```markdown
 # 7.执行如下命令,启动rabbitmq中的插件管理
@@ -2275,7 +2275,7 @@ Spring Cloud Bus links nodes of a distributed system with a lightweight message 
       .........
 ```
 
-![image-20190925222743776](SpringCloud 微服务工具集v1.1.assets/image-20190925222743776-3836511.png)
+![image-20190925222743776](SpringCloud微服务工具集v1.1.assets/image-20190925222743776-3836511.png)
 
 ```markdown
 # 10.关闭防火墙服务
@@ -2288,7 +2288,7 @@ Spring Cloud Bus links nodes of a distributed system with a lightweight message 
 	http://10.15.0.8:15672/
 ```
 
- ![image-20190926194738708](SpringCloud 微服务工具集v1.1.assets/image-20190926194738708-3836601.png)
+ ![image-20190926194738708](SpringCloud微服务工具集v1.1.assets/image-20190926194738708-3836601.png)
 
 ```markdown
 # 12.登录管理界面
@@ -2296,7 +2296,7 @@ Spring Cloud Bus links nodes of a distributed system with a lightweight message 
 	password:  guest
 ```
 
-![image-20190926194954822](SpringCloud 微服务工具集v1.1.assets/image-20190926194954822-3836665.png)
+![image-20190926194954822](SpringCloud微服务工具集v1.1.assets/image-20190926194954822-3836665.png)
 
 ```markdown
 # 13.MQ服务搭建成功
@@ -2316,7 +2316,7 @@ Spring Cloud Bus links nodes of a distributed system with a lightweight message 
 </dependency>
 ```
 
-![image-20200723104333906](SpringCloud 微服务工具集v1.1.assets/image-20200723104333906.png)
+![image-20200723104333906](SpringCloud微服务工具集v1.1.assets/image-20200723104333906.png)
 
 ```markdown
 # 2.配置统一配置中心连接到mq
@@ -2333,14 +2333,14 @@ spring.rabbitmq.password=password										#连接mq密码
 # 3.远端配置中加入连接mq配置
 ```
 
-![image-20200723105645915](SpringCloud 微服务工具集v1.1.assets/image-20200723105645915.png)
+![image-20200723105645915](SpringCloud微服务工具集v1.1.assets/image-20200723105645915.png)
 
 ```markdown
 # 4.启动统一配置中心服务
 - 正常启动
 ```
 
-![image-20200723111220198](SpringCloud 微服务工具集v1.1.assets/image-20200723111220198.png)
+![image-20200723111220198](SpringCloud微服务工具集v1.1.assets/image-20200723111220198.png)
 
 ```markdown
 # 5.启动客户端服务
@@ -2348,20 +2348,20 @@ spring.rabbitmq.password=password										#连接mq密码
 - 原因springcloud中默认链接不到远程服务器不会报错,但是在使用bus消息总线时必须开启连接远程服务失败报错
 ```
 
-![image-20200723111312496](SpringCloud 微服务工具集v1.1.assets/image-20200723111312496.png)
+![image-20200723111312496](SpringCloud微服务工具集v1.1.assets/image-20200723111312496.png)
 
 ```properties
 spring.cloud.config.fail-fast=true
 ```
 
-![image-20200723111754187](SpringCloud 微服务工具集v1.1.assets/image-20200723111754187.png)
+![image-20200723111754187](SpringCloud微服务工具集v1.1.assets/image-20200723111754187.png)
 
 ```markdown
 # 6.修改远程配置后在配置中心服务通过执行post接口刷新配置
 - curl -X POST http://localhost:7878/actuator/bus-refresh
 ```
 
-![image-20200723112316476](SpringCloud 微服务工具集v1.1.assets/image-20200723112316476.png)
+![image-20200723112316476](SpringCloud微服务工具集v1.1.assets/image-20200723112316476.png)
 
 ```markdown
 # 7.通过上述配置就实现了配置统一刷新
@@ -2387,9 +2387,9 @@ spring.cloud.config.fail-fast=true
 - 在webhooks中添加刷新配置接口
 ```
 
-![image-20200723120419412](SpringCloud 微服务工具集v1.1.assets/image-20200723120419412.png)
+![image-20200723120419412](SpringCloud微服务工具集v1.1.assets/image-20200723120419412.png)
 
-![image-20200723120947229](SpringCloud 微服务工具集v1.1.assets/image-20200723120947229.png)
+![image-20200723120947229](SpringCloud微服务工具集v1.1.assets/image-20200723120947229.png)
 
 ```markdown
 # 2.解决400错误问题
@@ -2506,7 +2506,7 @@ public class UrlFilter  implements Filter {
 }
 ```
 
-![image-20200723121203864](SpringCloud 微服务工具集v1.1.assets/image-20200723121203864.png)
+![image-20200723121203864](SpringCloud微服务工具集v1.1.assets/image-20200723121203864.png)
 
 -----
 

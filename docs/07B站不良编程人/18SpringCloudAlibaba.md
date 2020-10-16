@@ -41,9 +41,9 @@ With Spring Cloud Alibaba, you only need to add some annotations and a small amo
 </dependencyManagement>
 ```
 
-![image-20200727201703247](Spring Cloud Alibaba.assets/image-20200727201703247.png)
+![image-20200727201703247](SpringCloudAlibaba.assets/image-20200727201703247.png)
 
-![image-20200727201715844](Spring Cloud Alibaba.assets/image-20200727201715844.png)
+![image-20200727201715844](SpringCloudAlibaba.assets/image-20200727201715844.png)
 
 ----
 
@@ -51,7 +51,7 @@ With Spring Cloud Alibaba, you only need to add some annotations and a small amo
 
 ### 什么是Nacos  Name Service & Configurations Services
 
-![image-20200727202422243](Spring Cloud Alibaba.assets/image-20200727202422243.png)
+![image-20200727202422243](SpringCloudAlibaba.assets/image-20200727202422243.png)
 
 ```markdown
 - https://nacos.io/zh-cn/index.html
@@ -72,7 +72,7 @@ With Spring Cloud Alibaba, you only need to add some annotations and a small amo
 - https://github.com/alibaba/nacos/releases 
 ```
 
-![image-20200727202936158](Spring Cloud Alibaba.assets/image-20200727202936158.png)
+![image-20200727202936158](SpringCloudAlibaba.assets/image-20200727202936158.png)
 
 ```markdown
 # 2.解压缩安装包到指定位置
@@ -82,7 +82,7 @@ With Spring Cloud Alibaba, you only need to add some annotations and a small amo
 - data		  nacos启动成功后保存数据的目录
 ```
 
-![image-20200727203852405](Spring Cloud Alibaba.assets/image-20200727203852405.png)
+![image-20200727203852405](SpringCloudAlibaba.assets/image-20200727203852405.png)
 
 ````markdown
 # 3.启动安装服务
@@ -95,7 +95,7 @@ With Spring Cloud Alibaba, you only need to add some annotations and a small amo
 	执行 startup.cmd -m standalone 或者双击startup.cmd运行文件。
 ````
 
-![image-20200727204207794](Spring Cloud Alibaba.assets/image-20200727204207794.png)
+![image-20200727204207794](SpringCloudAlibaba.assets/image-20200727204207794.png)
 
 ```markdown
 # 4.访问nacos的web服务管理界面
@@ -103,7 +103,7 @@ With Spring Cloud Alibaba, you only need to add some annotations and a small amo
 - 用户名 和 密码都是nacos
 ```
 
-![image-20200727210727986](Spring Cloud Alibaba.assets/image-20200727210727986.png)
+![image-20200727210727986](SpringCloudAlibaba.assets/image-20200727210727986.png)
 
 ### 开发服务注册到nacos
 
@@ -119,7 +119,7 @@ With Spring Cloud Alibaba, you only need to add some annotations and a small amo
 </dependency>
 ```
 
-![image-20200727212459690](Spring Cloud Alibaba.assets/image-20200727212459690.png)
+![image-20200727212459690](SpringCloudAlibaba.assets/image-20200727212459690.png)
 
 ```markdown
 # 1.配置注册地址
@@ -137,13 +137,13 @@ management.endpoints.web.exposure.include=*														  #暴露所有web端�
 # 2.加入启动服务注册注解 [注意:][新版本之后这步可以省略不写]
 ```
 
-![image-20200727213320726](Spring Cloud Alibaba.assets/image-20200727213320726.png)
+![image-20200727213320726](SpringCloudAlibaba.assets/image-20200727213320726.png)
 
 ```markdown
 # 3.查看nacos的服务列表
 ```
 
-![image-20200727213221604](Spring Cloud Alibaba.assets/image-20200727213221604.png)
+![image-20200727213221604](SpringCloudAlibaba.assets/image-20200727213221604.png)
 
 ### 使用nacos作为配置中心
 
@@ -167,7 +167,7 @@ management.endpoints.web.exposure.include=*														  #暴露所有web端�
 </dependency>
 ```
 
-![image-20200728203807174](Spring Cloud Alibaba.assets/image-20200728203807174.png)
+![image-20200728203807174](SpringCloudAlibaba.assets/image-20200728203807174.png)
 
 ```markdown
 # 2.配置配置中心地址
@@ -181,15 +181,15 @@ spring.application.name=config															# 指定读取文件的前缀
 spring.profiles.active=prod																	# 指定读取文件的具体环境
 ```
 
-![image-20200728211501591](Spring Cloud Alibaba.assets/image-20200728211501591.png)
+![image-20200728211501591](SpringCloudAlibaba.assets/image-20200728211501591.png)
 
 ```markdown
 # 3.在nacos中创建配置
 ```
 
-![image-20200728211633327](Spring Cloud Alibaba.assets/image-20200728211633327.png)
+![image-20200728211633327](SpringCloudAlibaba.assets/image-20200728211633327.png)
 
-![image-20200728211924796](Spring Cloud Alibaba.assets/image-20200728211924796.png)
+![image-20200728211924796](SpringCloudAlibaba.assets/image-20200728211924796.png)
 
 ```markdown
 # 4.编写控制器测试配置读取情况
@@ -210,15 +210,15 @@ public class HelloController {
 }
 ```
 
-![image-20200728212037358](Spring Cloud Alibaba.assets/image-20200728212037358.png)
+![image-20200728212037358](SpringCloudAlibaba.assets/image-20200728212037358.png)
 
 ```markdown
 # 5.启动项目方式测试配置读取
 ```
 
-![image-20200728212221271](Spring Cloud Alibaba.assets/image-20200728212221271.png)
+![image-20200728212221271](SpringCloudAlibaba.assets/image-20200728212221271.png)
 
-![image-20200728212249215](Spring Cloud Alibaba.assets/image-20200728212249215.png)
+![image-20200728212249215](SpringCloudAlibaba.assets/image-20200728212249215.png)
 
 #### 2. DataId
 
@@ -256,7 +256,7 @@ public class HelloController {
 }
 ```
 
-![image-20200728215747497](Spring Cloud Alibaba.assets/image-20200728215747497.png)
+![image-20200728215747497](SpringCloudAlibaba.assets/image-20200728215747497.png)
 
 #### 4.命名空间
 
@@ -266,40 +266,40 @@ public class HelloController {
 - namespace命名空间是nacos针对于企业级开发设计用来针对于不同环境的区分,比如正在企业开发时有测试环境,生产环境,等其他环境,因此为了保证不同环境配置实现隔离,提出了namespace的概念,默认在nacos中存在一个public命名空间所有配置在没有指定命名空间时都在这个命名空间中获取配置,在实际开发时可以针对于不能环境创建不同的namespace空间。默认空间不能删除!
 ```
 
-![image-20200728220906225](Spring Cloud Alibaba.assets/image-20200728220906225.png)
+![image-20200728220906225](SpringCloudAlibaba.assets/image-20200728220906225.png)
 
 ```markdown
 # 2.创建其他命名空间
 - 每个命名空间都有一个唯一id,这个id是读取配置时指定空间的唯一标识
 ```
 
-![image-20200728221059584](Spring Cloud Alibaba.assets/image-20200728221059584.png)
+![image-20200728221059584](SpringCloudAlibaba.assets/image-20200728221059584.png)
 
-![image-20200728221139206](Spring Cloud Alibaba.assets/image-20200728221139206.png)
+![image-20200728221139206](SpringCloudAlibaba.assets/image-20200728221139206.png)
 
 ```markdown
 # 3.在配置列表查看空间
 ```
 
-![image-20200728221221582](Spring Cloud Alibaba.assets/image-20200728221221582.png)
+![image-20200728221221582](SpringCloudAlibaba.assets/image-20200728221221582.png)
 
 ```markdown
 # 4.在指定空间下载创建配置文件
 ```
 
-![image-20200728222410336](Spring Cloud Alibaba.assets/image-20200728222410336.png)
+![image-20200728222410336](SpringCloudAlibaba.assets/image-20200728222410336.png)
 
 ```markdown
 # 5.项目中使用命名空间指定配置
 ```
 
-![image-20200728223100749](Spring Cloud Alibaba.assets/image-20200728223100749.png)
+![image-20200728223100749](SpringCloudAlibaba.assets/image-20200728223100749.png)
 
 ```markdown
 # 6.测试配置
 ```
 
-![image-20200728223125420](Spring Cloud Alibaba.assets/image-20200728223125420.png)
+![image-20200728223125420](SpringCloudAlibaba.assets/image-20200728223125420.png)
 
 #### 5.配置分组
 
@@ -308,21 +308,21 @@ public class HelloController {
 - 配置分组是对配置集进行分组，通过一个有意义的字符串（如 Buy 或 Trade ）来表示，不同的配置分组下可以有相同的配置集（Data ID）。当您在 Nacos 上创建一个配置时，如果未填写配置分组的名称，则配置分组的名称默认采用 DEFAULT_GROUP 。配置分组的常见场景：可用于区分不同的项目或应用，例如：学生管理系统的配置集可以定义一个group为：STUDENT_GROUP。
 ```
 
-![image-20200728223745192](Spring Cloud Alibaba.assets/image-20200728223745192.png)
+![image-20200728223745192](SpringCloudAlibaba.assets/image-20200728223745192.png)
 
 ```markdown
 # 2.创建分组
 ```
 
-![image-20200728223921240](Spring Cloud Alibaba.assets/image-20200728223921240.png)
+![image-20200728223921240](SpringCloudAlibaba.assets/image-20200728223921240.png)
 
-![image-20200728224034473](Spring Cloud Alibaba.assets/image-20200728224034473.png)
+![image-20200728224034473](SpringCloudAlibaba.assets/image-20200728224034473.png)
 
 ```markdown
 # 3.读取不同分组的配置
 ```
 
-![image-20200728224128019](Spring Cloud Alibaba.assets/image-20200728224128019.png)
+![image-20200728224128019](SpringCloudAlibaba.assets/image-20200728224128019.png)
 
 ---
 
@@ -330,7 +330,7 @@ public class HelloController {
 
 ### 什么是sentinel
 
-![image-20200730205725897](Spring Cloud Alibaba.assets/image-20200730205725897.png)
+![image-20200730205725897](SpringCloudAlibaba.assets/image-20200730205725897.png)
 
 As microservices become popular, the stability of service calls is becoming increasingly important. [Sentinel](https://github.com/alibaba/Sentinel) takes "flow" as the breakthrough point, and works on multiple fields including flow control, circuit breaking and load protection to protect service reliability.				---[摘自官网]
 
@@ -349,7 +349,7 @@ As microservices become popular, the stability of service calls is becoming incr
 - 广泛的开源生态：Sentinel 提供开箱即用的与其它开源框架/库的整合模块，例如与 Spring Cloud、Dubbo、gRPC 的整合。您只需要引入相应的依赖并进行简单的配置即可快速地接入 Sentinel。
 ```
 
-![image-20200730210108995](Spring Cloud Alibaba.assets/image-20200730210108995.png)
+![image-20200730210108995](SpringCloudAlibaba.assets/image-20200730210108995.png)
 
 ### sentinel使用
 
@@ -366,7 +366,7 @@ As microservices become popular, the stability of service calls is becoming incr
 - https://github.com/alibaba/Sentinel/releases
 ```
 
-![image-20200730210627642](Spring Cloud Alibaba.assets/image-20200730210627642.png)
+![image-20200730210627642](SpringCloudAlibaba.assets/image-20200730210627642.png)
 
 ```markdown
 # 2.启动
@@ -374,21 +374,21 @@ As microservices become popular, the stability of service calls is becoming incr
 - java -Dserver.port=9191 -jar  sentinel-dashboard-1.7.2.jar
 ```
 
-![image-20200730211707791](Spring Cloud Alibaba.assets/image-20200730211707791.png)
+![image-20200730211707791](SpringCloudAlibaba.assets/image-20200730211707791.png)
 
 ```markdown
 # 3.访问web界面
 - http://localhost:9191/#/login
 ```
 
-![image-20200730211812235](Spring Cloud Alibaba.assets/image-20200730211812235.png)
+![image-20200730211812235](SpringCloudAlibaba.assets/image-20200730211812235.png)
 
 ```markdown
 # 4.登录
 - 用户名&密码: sentinel
 ```
 
-![image-20200730212001214](Spring Cloud Alibaba.assets/image-20200730212001214.png)
+![image-20200730212001214](SpringCloudAlibaba.assets/image-20200730212001214.png)
 
 #### 2.sentinel 实时监控服务
 
@@ -410,7 +410,7 @@ As microservices become popular, the stability of service calls is becoming incr
 </dependency>
 ```
 
-![image-20200730213841674](Spring Cloud Alibaba.assets/image-20200730213841674.png)
+![image-20200730213841674](SpringCloudAlibaba.assets/image-20200730213841674.png)
 
 ```markdown
 # 2.配置
@@ -427,13 +427,13 @@ spring.cloud.sentinel.transport.dashboard=localhost:9191 # 连接dashboard
 spring.cloud.sentinel.transport.port=8719								 # 与dashboard通信的端口
 ```
 
-![image-20200730214440292](Spring Cloud Alibaba.assets/image-20200730214440292.png)
+![image-20200730214440292](SpringCloudAlibaba.assets/image-20200730214440292.png)
 
 ```markdown
 # 3.启动服务
 ```
 
-![image-20200730214911616](Spring Cloud Alibaba.assets/image-20200730214911616.png)
+![image-20200730214911616](SpringCloudAlibaba.assets/image-20200730214911616.png)
 
 ```markdown
 # 4.访问dashboard界面查看服务监控
@@ -441,7 +441,7 @@ spring.cloud.sentinel.transport.port=8719								 # 与dashboard通信的端口
 - 默认情况下sentiel为延迟加载,不会在启动之后立即创建服务监控,需要对服务进行调用时才会初始化
 ```
 
-![image-20200730215003082](Spring Cloud Alibaba.assets/image-20200730215003082.png)
+![image-20200730215003082](SpringCloudAlibaba.assets/image-20200730215003082.png)
 
 ```markdown
 # 5.开发服务
@@ -465,20 +465,20 @@ public class SentinelController {
 }
 ```
 
-![image-20200730215202043](Spring Cloud Alibaba.assets/image-20200730215202043.png)
+![image-20200730215202043](SpringCloudAlibaba.assets/image-20200730215202043.png)
 
 ```markdown
 # 6.启动进行调用
 - http://localhost:8789/sentinel/test
 ```
 
-![image-20200730215227292](Spring Cloud Alibaba.assets/image-20200730215227292.png)
+![image-20200730215227292](SpringCloudAlibaba.assets/image-20200730215227292.png)
 
 ```markdown
 # 7.查看监控界面
 ```
 
-![image-20200730215420417](Spring Cloud Alibaba.assets/image-20200730215420417.png)
+![image-20200730215420417](SpringCloudAlibaba.assets/image-20200730215420417.png)
 
 #### 3.sentinel 流量控制
 
@@ -506,16 +506,16 @@ public class SentinelController {
 # 1.配置QPS流量控制
 ```
 
-![image-20200730220822573](Spring Cloud Alibaba.assets/image-20200730220822573.png)
+![image-20200730220822573](SpringCloudAlibaba.assets/image-20200730220822573.png)
 
-![image-20200730220846876](Spring Cloud Alibaba.assets/image-20200730220846876.png)
+![image-20200730220846876](SpringCloudAlibaba.assets/image-20200730220846876.png)
 
 ```markdown
 # 2.测试
 - 每秒只能最大接收1个请求,超过1个报错
 ```
 
-![image-20200730220950595](Spring Cloud Alibaba.assets/image-20200730220950595.png)
+![image-20200730220950595](SpringCloudAlibaba.assets/image-20200730220950595.png)
 
 ###### 线程数限流
 
@@ -523,13 +523,13 @@ public class SentinelController {
 # 1.配置线程数限流
 ```
 
-![image-20200730223510370](Spring Cloud Alibaba.assets/image-20200730223510370.png)
+![image-20200730223510370](SpringCloudAlibaba.assets/image-20200730223510370.png)
 
 ```markdown
 # 2.访问测试
 ```
 
-![image-20200730224844222](Spring Cloud Alibaba.assets/image-20200730224844222.png)
+![image-20200730224844222](SpringCloudAlibaba.assets/image-20200730224844222.png)
 
 ###### 流控模式
 
@@ -539,7 +539,7 @@ public class SentinelController {
 - 关联: 当两个资源之间具有资源争抢或者依赖关系的时候，这两个资源便具有了关联。比如对数据库同一个字段的读操作和写操作存在争抢，读的速度过高会影响写得速度，写的速度过高会影响读的速度。如果放任读写操作争抢资源，则争抢本身带来的开销会降低整体的吞吐量。可使用关联限流来避免具有关联关系的资源之间过度的争抢，举例来说，read_db 和 write_db 这两个资源分别代表数据库读写，我们可以给 read_db 设置限流规则来达到写优先的目的：设置 strategy 为 RuleConstant.STRATEGY_RELATE 同时设置 refResource 为 write_db。这样当写库操作过于频繁时，读数据的请求会被限流。
 ```
 
-![image-20200801195347534](Spring Cloud Alibaba.assets/image-20200801195347534.png)
+![image-20200801195347534](SpringCloudAlibaba.assets/image-20200801195347534.png)
 
 ```markdown
 - 链路限流: https://github.com/alibaba/Sentinel/wiki/%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6
@@ -572,15 +572,15 @@ public class SentinelController {
 
 - 平均响应时间 (DEGRADE_GRADE_RT)：当 1s 内持续进入 N 个请求，对应时刻的平均响应时间（秒级）均超过阈值（count，以 ms 为单位），那么在接下的时间窗口（DegradeRule 中的 timeWindow，以 s 为单位）之内，对这个方法的调用都会自动地熔断（抛出 DegradeException）。注意 Sentinel 默认统计的 RT 上限是 4900 ms，超出此阈值的都会算作 4900 ms，若需要变更此上限可以通过启动配置项 -Dcsp.sentinel.statistic.max.rt=xxx 来配置。
 
-![image-20200802142932522](Spring Cloud Alibaba.assets/image-20200802142932522.png)
+![image-20200802142932522](SpringCloudAlibaba.assets/image-20200802142932522.png)
 
 - 异常比例 (DEGRADE_GRADE_EXCEPTION_RATIO)：当资源的每秒请求量 >= N（可配置），并且每秒异常总数占通过量的比值超过阈值（DegradeRule 中的 count）之后，资源进入降级状态，即在接下的时间窗口（DegradeRule 中的 timeWindow，以 s 为单位）之内，对这个方法的调用都会自动地返回。异常比率的阈值范围是 [0.0, 1.0]，代表 0% - 100%。
 
-![image-20200802143052470](Spring Cloud Alibaba.assets/image-20200802143052470.png)
+![image-20200802143052470](SpringCloudAlibaba.assets/image-20200802143052470.png)
 
 - 异常数 (DEGRADE_GRADE_EXCEPTION_COUNT)：当资源近 1 分钟的异常数目超过阈值之后会进行熔断。注意由于统计时间窗口是分钟级别的，若 timeWindow 小于 60s，则结束熔断状态后仍可能再进入熔断状态。
 
-![image-20200802143314524](Spring Cloud Alibaba.assets/image-20200802143314524.png)
+![image-20200802143314524](SpringCloudAlibaba.assets/image-20200802143314524.png)
 
 ####  5.SentinelResource注解
 
@@ -589,7 +589,7 @@ public class SentinelController {
 - https://github.com/alibaba/Sentinel/wiki/%E6%B3%A8%E8%A7%A3%E6%94%AF%E6%8C%81
 ```
 
-![image-20200802150527319](Spring Cloud Alibaba.assets/image-20200802150527319.png)
+![image-20200802150527319](SpringCloudAlibaba.assets/image-20200802150527319.png)
 
 ```java
  @GetMapping("/sentinel/test1")

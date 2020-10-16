@@ -43,7 +43,7 @@
 
 > 基于`AMQP`协议，erlang语言开发，是部署最广泛的开源消息中间件,是最受欢迎的开源消息中间件之一。
 
-![image-20190925215603036](RibbitMQ 实战教程.assets/image-20190925215603036-9419777.png)
+![image-20190925215603036](RibbitMQ实战教程.assets/image-20190925215603036-9419777.png)
 
 `官网`: https://www.rabbitmq.com/
 
@@ -54,17 +54,17 @@
  		AMQP（advanced message queuing protocol）`在2003年时被提出，最早用于解决金融领不同平台之间的消息传递交互问题。顾名思义，AMQP是一种协议，更准确的说是一种binary wire-level protocol（链接协议）。这是其和JMS的本质差别，AMQP不从API层进行限定，而是直接定义网络交换的数据格式。这使得实现了AMQP的provider天然性就是跨平台的。以下是AMQP协议模型:
 ```
 
-![image-20200311182438041](RibbitMQ 实战教程.assets/image-20200311182438041.png)
+![image-20200311182438041](RibbitMQ实战教程.assets/image-20200311182438041.png)
 
 ### 2.2 RabbitMQ 的安装
 
 #### 2.2.1 下载
 
-`官网下载地址`: https://www.rabbitmq.com/download.html![image-20190925220115235](RibbitMQ 实战教程.assets/image-20190925220115235.png)
+`官网下载地址`: https://www.rabbitmq.com/download.html![image-20190925220115235](RibbitMQ实战教程.assets/image-20190925220115235.png)
 
 > `最新版本`: 3.7.18
 
-#### 2.2.2 下载的安装包![image-20190925220343521](RibbitMQ 实战教程.assets/image-20190925220343521.png)
+#### 2.2.2 下载的安装包![image-20190925220343521](RibbitMQ实战教程.assets/image-20190925220343521.png)
 
 > `注意`:这里的安装包是centos7安装的包
 
@@ -92,11 +92,11 @@
 	vim /etc/rabbitmq/rabbitmq.config 
 ```
 
-![image-20190925222230260](RibbitMQ 实战教程.assets/image-20190925222230260-3836271.png)
+![image-20190925222230260](RibbitMQ实战教程.assets/image-20190925222230260-3836271.png)
 
 将上图中配置文件中红色部分去掉`%%`,以及最后的`,`逗号 修改为下图:
 
-![image-20190925222329200](RibbitMQ 实战教程.assets/image-20190925222329200-3836312.png)
+![image-20190925222329200](RibbitMQ实战教程.assets/image-20190925222329200-3836312.png)
 
 ```markdown
 # 7.执行如下命令,启动rabbitmq中的插件管理
@@ -140,7 +140,7 @@
       .........
 ```
 
-![image-20190925222743776](RibbitMQ 实战教程.assets/image-20190925222743776-3836511.png)
+![image-20190925222743776](RibbitMQ实战教程.assets/image-20190925222743776-3836511.png)
 
 ```markdown
 # 10.关闭防火墙服务
@@ -153,7 +153,7 @@
 	http://10.15.0.8:15672/
 ```
 
- ![image-20190926194738708](RibbitMQ 实战教程.assets/image-20190926194738708-3836601.png)
+ ![image-20190926194738708](RibbitMQ实战教程.assets/image-20190926194738708-3836601.png)
 
 ```markdown
 # 12.登录管理界面
@@ -161,7 +161,7 @@
 	password:  guest
 ```
 
-![image-20190926194954822](RibbitMQ 实战教程.assets/image-20190926194954822-3836665.png)
+![image-20190926194954822](RibbitMQ实战教程.assets/image-20190926194954822-3836665.png)
 
 ----
 
@@ -184,7 +184,7 @@
 
 #### 3.2.1 overview概览
 
-![image-20191126162026720](RibbitMQ 实战教程.assets/image-20191126162026720.png)
+![image-20191126162026720](RibbitMQ实战教程.assets/image-20191126162026720.png)
 
 - `connections：无论生产者还是消费者，都需要与RabbitMQ建立连接后才可以完成消息的生产和消费，在这里可以查看连接情况`
 
@@ -200,7 +200,7 @@
 
 ##### 1. 添加用户
 
-![image-20191126162617280](RibbitMQ 实战教程.assets/image-20191126162617280.png)
+![image-20191126162617280](RibbitMQ实战教程.assets/image-20191126162617280.png)
 
 上面的Tags选项，其实是指定用户的角色，可选的有以下几个：
 
@@ -231,7 +231,7 @@
 	为了让各个用户可以互不干扰的工作，RabbitMQ添加了虚拟主机（Virtual Hosts）的概念。其实就是一个独立的访问路径，不同用户使用不同路径，各自有自己的队列、交换机，互相不会影响。
 ```
 
- ![image-20191126163023153](RibbitMQ 实战教程.assets/image-20191126163023153.png)
+ ![image-20191126163023153](RibbitMQ实战教程.assets/image-20191126163023153.png)
 
 ##### 3. 绑定虚拟主机和用户
 
@@ -239,11 +239,11 @@
 
 点击添加好的虚拟主机：
 
- ![image-20191126163506795](RibbitMQ 实战教程.assets/image-20191126163506795.png)
+ ![image-20191126163506795](RibbitMQ实战教程.assets/image-20191126163506795.png)
 
 进入虚拟机设置界面:
 
-![image-20191126163631889](RibbitMQ 实战教程.assets/image-20191126163631889.png)
+![image-20191126163631889](RibbitMQ实战教程.assets/image-20191126163631889.png)
 
 -----
 
@@ -251,13 +251,13 @@
 
 ### 4.0 AMQP协议的回顾
 
-![image-20200312140114784](RibbitMQ 实战教程.assets/image-20200312140114784.png)
+![image-20200312140114784](RibbitMQ实战教程.assets/image-20200312140114784.png)
 
 ### 4.1 RabbitMQ支持的消息模型
 
-![image-20191126165434784](RibbitMQ 实战教程.assets/image-20191126165434784.png)
+![image-20191126165434784](RibbitMQ实战教程.assets/image-20191126165434784.png)
 
-![image-20191126165459282](RibbitMQ 实战教程.assets/image-20191126165459282.png)
+![image-20191126165459282](RibbitMQ实战教程.assets/image-20191126165459282.png)
 
 
 
@@ -273,7 +273,7 @@
 
 ### 4.3 第一种模型(直连)
 
-![image-20191126165840602](RibbitMQ 实战教程.assets/image-20191126165840602.png)
+![image-20191126165840602](RibbitMQ实战教程.assets/image-20191126165840602.png)
 
 在上图的模型中，有以下概念：
 
@@ -339,7 +339,7 @@
 
 `Work queues`，也被称为（`Task queues`），任务模型。当消息处理比较耗时的时候，可能生产消息的速度会远远大于消息的消费速度。长此以往，消息就会堆积越来越多，无法及时处理。此时就可以使用work 模型：**让多个消费者绑定到一个队列，共同消费队列中的消息**。队列中的消息一旦消费，就会消失，因此任务是不会被重复执行的。
 
-![image-20200314221002008](RibbitMQ 实战教程.assets/image-20200314221002008.png)
+![image-20200314221002008](RibbitMQ实战教程.assets/image-20200314221002008.png)
 
 角色：
 
@@ -387,9 +387,9 @@ channel.basicConsume("hello",true,new DefaultConsumer(channel){
 
 ##### 4.测试结果
 
-![image-20200314223242058](RibbitMQ 实战教程.assets/image-20200314223242058.png)
+![image-20200314223242058](RibbitMQ实战教程.assets/image-20200314223242058.png)
 
-![image-20200314223302207](RibbitMQ 实战教程.assets/image-20200314223302207.png)
+![image-20200314223302207](RibbitMQ实战教程.assets/image-20200314223302207.png)
 
 > `总结:默认情况下，RabbitMQ将按顺序将每个消息发送给下一个使用者。平均而言，每个消费者都会收到相同数量的消息。这种分发消息的方式称为循环。`
 
@@ -415,9 +415,9 @@ channel.basicConsume("hello",false,new DefaultConsumer(channel){
 
 - 关闭消息的自动确认,开启手动确认消息
 
-  ![image-20200314230412178](RibbitMQ 实战教程.assets/image-20200314230412178.png)
+  ![image-20200314230412178](RibbitMQ实战教程.assets/image-20200314230412178.png)
 
-  ![image-20200314230423280](RibbitMQ 实战教程.assets/image-20200314230423280.png)
+  ![image-20200314230423280](RibbitMQ实战教程.assets/image-20200314230423280.png)
 
 ---
 
@@ -425,7 +425,7 @@ channel.basicConsume("hello",false,new DefaultConsumer(channel){
 
 `fanout 扇出 也称为广播`
 
- ![image-20191126213115873](RibbitMQ 实战教程.assets/image-20191126213115873.png)
+ ![image-20191126213115873](RibbitMQ实战教程.assets/image-20191126213115873.png)
 
 在广播模式下，消息发送流程是这样的：
 
@@ -501,11 +501,11 @@ channel.basicConsume(queue,true,new DefaultConsumer(channel){
 
 ##### 5. 测试结果
 
-![image-20200315180653207](RibbitMQ 实战教程.assets/image-20200315180653207.png)
+![image-20200315180653207](RibbitMQ实战教程.assets/image-20200315180653207.png)
 
-![image-20200315180708489](RibbitMQ 实战教程.assets/image-20200315180708489.png)
+![image-20200315180708489](RibbitMQ实战教程.assets/image-20200315180708489.png)
 
-![image-20200315180728035](RibbitMQ 实战教程.assets/image-20200315180728035.png)
+![image-20200315180728035](RibbitMQ实战教程.assets/image-20200315180728035.png)
 
 ----
 
@@ -523,7 +523,7 @@ channel.basicConsume(queue,true,new DefaultConsumer(channel){
 
 流程:
 
-![image-20191126220145375](RibbitMQ 实战教程.assets/image-20191126220145375.png)
+![image-20191126220145375](RibbitMQ实战教程.assets/image-20191126220145375.png)
 
 图解：
 
@@ -583,15 +583,15 @@ channel.basicConsume(queue,true,new DefaultConsumer(channel){
 
 ##### 4.测试生产者发送Route key为error的消息时
 
- ![image-20200316102613933](RibbitMQ 实战教程.assets/image-20200316102613933.png)
+ ![image-20200316102613933](RibbitMQ实战教程.assets/image-20200316102613933.png)
 
- ![image-20200316102627912](RibbitMQ 实战教程.assets/image-20200316102627912.png)
+ ![image-20200316102627912](RibbitMQ实战教程.assets/image-20200316102627912.png)
 
 ##### 5.测试生产者发送Route key为info的消息时
 
- ![image-20200316102925740](RibbitMQ 实战教程.assets/image-20200316102925740.png)
+ ![image-20200316102925740](RibbitMQ实战教程.assets/image-20200316102925740.png)
 
- ![image-20200316102947326](RibbitMQ 实战教程.assets/image-20200316102947326.png)
+ ![image-20200316102947326](RibbitMQ实战教程.assets/image-20200316102947326.png)
 
 ----
 
@@ -599,7 +599,7 @@ channel.basicConsume(queue,true,new DefaultConsumer(channel){
 
 `Topic`类型的`Exchange`与`Direct`相比，都是可以根据`RoutingKey`把消息路由到不同的队列。只不过`Topic`类型`Exchange`可以让队列在绑定`Routing key` 的时候使用通配符！这种模型`Routingkey` 一般都是由一个或多个单词组成，多个单词之间以”.”分割，例如： `item.insert`
 
-![image-20191127121900255](RibbitMQ 实战教程.assets/image-20191127121900255.png)
+![image-20191127121900255](RibbitMQ实战教程.assets/image-20191127121900255.png)
 
 ``` markdown
 # 统配符
@@ -664,9 +664,9 @@ channel.basicConsume(queue,true,new DefaultConsumer(channel){
 
 ##### 4.测试结果
 
- ![image-20200316113935785](RibbitMQ 实战教程.assets/image-20200316113935785.png)
+ ![image-20200316113935785](RibbitMQ实战教程.assets/image-20200316113935785.png)
 
- ![image-20200316114000459](RibbitMQ 实战教程.assets/image-20200316114000459.png)
+ ![image-20200316114000459](RibbitMQ实战教程.assets/image-20200316114000459.png)
 
 ## 5. SpringBoot中使用RabbitMQ
 
@@ -901,15 +901,15 @@ spring:
 
 - `串行方式:` 将注册信息写入数据库后,发送注册邮件,再发送注册短信,以上三个任务全部完成后才返回给客户端。 这有一个问题是,邮件,短信并不是必须的,它只是一个通知,而这种做法让客户端等待没有必要等待的东西. 
 
- ![这里写图片描述](RibbitMQ 实战教程.assets/SouthEast-4860248.png)
+ ![这里写图片描述](RibbitMQ实战教程.assets/SouthEast-4860248.png)
 
 - `并行方式: `将注册信息写入数据库后,发送邮件的同时,发送短信,以上三个任务完成后,返回给客户端,并行的方式能提高处理的时间。 
 
- ![这里写图片描述](RibbitMQ 实战教程.assets/SouthEast-20191127211112660.png)
+ ![这里写图片描述](RibbitMQ实战教程.assets/SouthEast-20191127211112660.png)
 
 - `消息队列:`假设三个业务节点分别使用50ms,串行方式使用时间150ms,并行使用时间100ms。虽然并行已经提高的处理时间,但是,前面说过,邮件和短信对我正常的使用网站没有任何影响，客户端没有必要等着其发送完成才显示注册成功,应该是写入数据库后就返回.  `消息队列`: 引入消息队列后，把发送邮件,短信不是必须的业务逻辑异步处理 
 
-  ![img](RibbitMQ 实战教程.assets/592892-20190520220249900-1679743651.jpg)
+  ![img](RibbitMQ实战教程.assets/592892-20190520220249900-1679743651.jpg)
 
 由此可以看出,引入消息队列后，用户的响应时间就等于写入数据库的时间+写入消息队列的时间(可以忽略不计),引入消息队列后处理后,响应时间是串行的3倍,是并行的2倍。
 
@@ -919,13 +919,13 @@ spring:
 
 `场景：双11是购物狂节,用户下单后,订单系统需要通知库存系统,传统的做法就是订单系统调用库存系统的接口. `
 
- ![这里写图片描述](RibbitMQ 实战教程.assets/SouthEast-20191127211247287.png)
+ ![这里写图片描述](RibbitMQ实战教程.assets/SouthEast-20191127211247287.png)
 
 这种做法有一个缺点:
 
 当库存系统出现故障时,订单就会失败。 订单系统和库存系统高耦合.  引入消息队列 
 
- ![这里写图片描述](RibbitMQ 实战教程.assets/SouthEast-20191127211304085.png)
+ ![这里写图片描述](RibbitMQ实战教程.assets/SouthEast-20191127211304085.png)
 
 - `订单系统:`用户下单后,订单系统完成持久化处理,将消息写入消息队列,返回用户订单下单成功。
 
@@ -943,7 +943,7 @@ spring:
 
 ​			2.可以缓解短时间的高流量压垮应用(应用程序按自己的最大处理能力获取订单) 
 
- ![这里写图片描述](RibbitMQ 实战教程.assets/SouthEast-20191127211341601.png)
+ ![这里写图片描述](RibbitMQ实战教程.assets/SouthEast-20191127211341601.png)
 
 1.用户的请求,服务器收到之后,首先写入消息队列,加入消息队列长度超过最大值,则直接抛弃用户请求或跳转到错误页面.  
 
@@ -963,7 +963,7 @@ spring:
 
 1. ##### 架构图
 
-![image-20200320094147471](RibbitMQ 实战教程.assets/image-20200320094147471.png)
+![image-20200320094147471](RibbitMQ实战教程.assets/image-20200320094147471.png)
 
 ​	核心解决问题:  `当集群中某一时刻master节点宕机,可以对Quene中信息,进行备份`
 
@@ -1015,30 +1015,30 @@ spring:
    # 8.登录管理界面,展示如下状态:
    ```
 
-   ![image-20200320095613586](RibbitMQ 实战教程.assets/image-20200320095613586.png)
+   ![image-20200320095613586](RibbitMQ实战教程.assets/image-20200320095613586.png)
 
    ```markdown
    # 9.测试集群在node1上,创建队列
    ```
 
-   ![image-20200320095743935](RibbitMQ 实战教程.assets/image-20200320095743935.png)
+   ![image-20200320095743935](RibbitMQ实战教程.assets/image-20200320095743935.png)
 
    ```markdown
    # 10.查看node2和node3节点:
    ```
 
-   ![image-20200320095827688](RibbitMQ 实战教程.assets/image-20200320095827688.png)
+   ![image-20200320095827688](RibbitMQ实战教程.assets/image-20200320095827688.png)
 
-   ![image-20200320095843370](RibbitMQ 实战教程.assets/image-20200320095843370.png)
+   ![image-20200320095843370](RibbitMQ实战教程.assets/image-20200320095843370.png)
 
    ```markdown
    # 11.关闭node1节点,执行如下命令,查看node2和node3:
    	rabbitmqctl stop_app
    ```
 
-   ![image-20200320100000347](RibbitMQ 实战教程.assets/image-20200320100000347.png)
+   ![image-20200320100000347](RibbitMQ实战教程.assets/image-20200320100000347.png)
 
-   ![image-20200320100010968](RibbitMQ 实战教程.assets/image-20200320100010968.png)
+   ![image-20200320100010968](RibbitMQ实战教程.assets/image-20200320100010968.png)
 
    ---
 
@@ -1054,7 +1054,7 @@ spring:
 
 1. ##### 集群架构图
 
-   ![image-20200320113423235](RibbitMQ 实战教程.assets/image-20200320113423235.png)
+   ![image-20200320113423235](RibbitMQ实战教程.assets/image-20200320113423235.png)
 
    
 

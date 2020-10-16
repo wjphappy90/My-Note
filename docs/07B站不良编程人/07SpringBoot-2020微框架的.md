@@ -25,7 +25,7 @@ SSM Spring springmvc  mybatis    <----   SSM Spring  stauts2|struts1  mybatis  <
 
 项目目录结构:
 
-![image-20200321091519423](Spring Boot-2020微框架.assets/image-20200321091519423.png)
+![image-20200321091519423](SpringBoot-2020微框架.assets/image-20200321091519423.png)
 
 - `springboot 项目中必须在src/main/resources中放入application.yml(.properties)核心配置文件  名字必须为:application`
 - `springboot 项目中必须在src/main/java中所有子包之外构建全局入口类型,xxApplication,入口类一个springboot项目只能有一个`
@@ -379,11 +379,11 @@ spring:
 
 ##### 10.1.4 第一种方式使用插件启动
 
- ![image-20191129124602959](Spring Boot-2020微框架.assets/image-20191129124602959.png)
+ ![image-20191129124602959](SpringBoot-2020微框架.assets/image-20191129124602959.png)
 
 ##### 10.1.5 第二种方式使用idea中指定工作目录启动  [推荐]
 
- ![image-20191129124727562](Spring Boot-2020微框架.assets/image-20191129124727562.png)
+ ![image-20191129124727562](SpringBoot-2020微框架.assets/image-20191129124727562.png)
 
 ##### 	10.1.6 启动访问jsp页面
 
@@ -440,7 +440,7 @@ public class HelloController {
 
 ##### 10.2.4 在templates目录中定义模板
 
-![image-20200323085834206](Spring Boot-2020微框架.assets/image-20200323085834206.png)
+![image-20200323085834206](SpringBoot-2020微框架.assets/image-20200323085834206.png)
 
 ##### 10.2.5 测试访问
 
@@ -450,7 +450,7 @@ http://localhost:8989/springboot_day3/hello/hello
 
 ##### 10.2.6 查看结果
 
-![image-20200323085948499](Spring Boot-2020微框架.assets/image-20200323085948499.png)
+![image-20200323085948499](SpringBoot-2020微框架.assets/image-20200323085948499.png)
 
 ##### 10.2.7 开启直接访问html页面
 
@@ -464,7 +464,7 @@ spring.resources.static-locations=classpath:/templates/,classpath:/static/
 http://localhost:8989/springboot_day3/index.html
 ```
 
-![image-20200323090142705](Spring Boot-2020微框架.assets/image-20200323090142705.png)
+![image-20200323090142705](SpringBoot-2020微框架.assets/image-20200323090142705.png)
 
 ### 10.3 Thymeleaf基本使用
 
@@ -490,9 +490,9 @@ model.addAttribute("name","张三"); 或 request.setAttribute("name","小黑");
 
 `注意:在springboot2.x版本中必须加入国际化配置文件才能正常展示:`
 
-![image-20200323100724749](Spring Boot-2020微框架.assets/image-20200323100724749.png)
+![image-20200323100724749](SpringBoot-2020微框架.assets/image-20200323100724749.png)
 
-![image-20200323100747881](Spring Boot-2020微框架.assets/image-20200323100747881.png)
+![image-20200323100747881](SpringBoot-2020微框架.assets/image-20200323100747881.png)
 
 ###### c. 获取并解析含有html标签数据
 
@@ -507,7 +507,7 @@ model.addAttribute("username","小陈");
 <span th:text="${name}"/>
 ```
 
-![image-20200323100956740](Spring Boot-2020微框架.assets/image-20200323100956740.png)
+![image-20200323100956740](SpringBoot-2020微框架.assets/image-20200323100956740.png)
 
 - 获取并解析
 
@@ -515,7 +515,7 @@ model.addAttribute("username","小陈");
  <span th:utext="${name}"/>
 ```
 
-![image-20200323101457134](Spring Boot-2020微框架.assets/image-20200323101457134.png)
+![image-20200323101457134](SpringBoot-2020微框架.assets/image-20200323101457134.png)
 
 - 将数据赋值给表单元素
 
@@ -523,7 +523,7 @@ model.addAttribute("username","小陈");
   <input type="text" th:value="${username}"/>
   ```
 
-  ![image-20200323103452620](Spring Boot-2020微框架.assets/image-20200323103452620.png)
+  ![image-20200323103452620](SpringBoot-2020微框架.assets/image-20200323103452620.png)
 
   
 
@@ -603,7 +603,7 @@ bir: <span th:text="${user.bir}"></span>  ====  <span th:text="${#dates.format(u
 
 - 项目中放入对应静态资源
 
-  ![image-20200323142307411](Spring Boot-2020微框架.assets/image-20200323142307411.png)
+  ![image-20200323142307411](SpringBoot-2020微框架.assets/image-20200323142307411.png)
 
 - 页面中引入
 
@@ -926,7 +926,7 @@ logging:
 
 > springboot是对原有项目中spring框架和springmvc的进一步封装,因此在springboot中同样支持spring框架中AOP切面编程,不过在springboot中为了快速开发仅仅提供了注解方式的切面编程.
 
-![image-20200327115039033](Spring Boot-2020微框架.assets/image-20200327115039033.png)
+![image-20200327115039033](SpringBoot-2020微框架.assets/image-20200327115039033.png)
 
 ##### 	15.2 使用
 
