@@ -15,3 +15,5 @@
 [06消息队列](./docs/06消息队列/_sidebar.md)
 
 [07B站不良编程人](./docs/07B站不良编程人/_sidebar.md)
+
+[08前峰资料](./docs/08千峰资料/_sidebar.md)
