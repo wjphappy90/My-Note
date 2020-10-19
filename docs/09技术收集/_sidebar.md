@@ -16,7 +16,7 @@
 
 [06ssm整合](./docs/09技术收集/06ssm整合.md)
 
-[07对象存储 OSS](./docs/09技术收集/07对象存储 OSS.md)
+[07对象存储 OSS](./docs/09技术收集/07对象存储OSS.md)
 
 [08JAVA操作MongoDB](./docs/09技术收集/08JAVA操作MongoDB.md)
 
