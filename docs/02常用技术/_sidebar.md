@@ -42,5 +42,21 @@
 [09Docker](./docs/02常用技术/_sidebar.md)
 
 - [00Linux安装Docker](./docs/02常用技术/09Docker/00Linux安装Docker.md)
-
 - [01Docker](./docs/02常用技术/09Docker/01Docker.md)
+
+[09Angular](./docs/02常用技术/_sidebar.md)
+
+- [Angular 简介](./docs/02常用技术/10Angular/introduction)
+- [起步](./docs/02常用技术/10Angular/getting-started)
+- [一个 Angular 程序是如何启动的](./docs/02常用技术/10Angular/app-started)
+- [特性概览](./docs/02常用技术/10Angular/architecure)
+- [TypeScript](./docs/02常用技术/10Angular/typescript)
+- [组件](./docs/02常用技术/10Angular/component)
+- [模板语法](./docs/02常用技术/10Angular/template-syntax)
+- [指令](./docs/02常用技术/10Angular/directive)
+- [表单处理](./docs/02常用技术/10Angular/form)
+- [和服务端交互](./docs/02常用技术/10Angular/http)
+- [基础案例：TodoMVC](./docs/02常用技术/10Angular/todomvc-angular)
+- [路由处理](./docs/02常用技术/10Angular/router)
+- [综合案例](./docs/02常用技术/10Angular/integrated-case)
+- [Angular CLI](./docs/02常用技术/10Angular/angular-cli)
