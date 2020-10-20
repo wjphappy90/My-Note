@@ -2,6 +2,10 @@
 
 - [01Vue基础入门](./docs/02常用技术/01Vue/01Vue基础.md)
 - [02Vue常用操作](./docs/02常用技术/01Vue/02Vue常用操作.md)
+- [03-Vue基础](./docs/02常用技术/01Vue/03-Vue基础.md)
+- [04-Vue组件化开发](./docs/02常用技术/01Vue/04-Vue组件化开发.md)
+- [05-vue-cli3开发单文件](./docs/02常用技术/01Vue/05-vue-cli3开发单文件.md)
+- [06-Vue全家桶](./docs/02常用技术/01Vue/06-Vue全家桶.md)
 
 [02SpringCloud](./docs/02常用技术/_sidebar.md)
 
