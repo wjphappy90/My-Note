@@ -8,7 +8,7 @@
 
 ​		但即便如此，对于许多开发来说，编写这个 yml 或 json 格式的描述文件，本身也是有一定负担的工作，特别是在后面持续迭代开发的时候，往往会忽略更新这个描述文件，直接更改代码。久而久之，这个描述文件也和实际项目渐行渐远，基于该描述文件生成的接口文档也失去了参考意义。**所以作为 Java 界服务端的大一统框架 Spring，迅速将 Swagger 规范纳入自身的标准，建立了 Spring-swagger 项目，后面改成了现在的 Springfox。通过在项目中引入 Springfox，可以扫描相关的代码，生成该描述文件，进而生成与代码一致的接口文档和客户端代码。**这种通过代码生成接口文档的形式，在后面需求持续迭代的项目中，显得尤为重要和高效。
 
-![image-20200907160045833](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907160045833.png)
+![image-20200907160045833](Swagger.assets/image-20200907160045833.png)
 
 - 总结：**Swagger 就是一个用来定义接口标准，接口规范，同时能根据你的代码自动生成接口说明文档的一个工具。**
 
@@ -16,7 +16,7 @@
 
 ## 2. 官方提供的工具
 
-![image-20200907160803871](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907160803871.png)
+![image-20200907160803871](Swagger.assets/image-20200907160803871.png)
 
 ​		`Swagger Codegen`：通过Codegen 可以将描述文件生成 html 格式和 cwiki 形式的接口文档，同时也能生成多种语言的服务端和客户端代码。支持通过 jar 包、docker、node 等方式在本地化执行生成。也可以在后面的 Swagger Editor 中在线生成。
 
@@ -94,13 +94,13 @@ public class SwaggerConfig {
 
 ### 3.3 启动 SpringBoot 项目
 
-![image-20200907164327757](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907164327757.png)
+![image-20200907164327757](Swagger.assets/image-20200907164327757.png)
 
 ### 3.4 访问 Swagger 的 UI 界面
 
 **访问 Swagger 提供的 UI 界面：**http://localhost:8080/swagger-ui.html
 
-![image-20200907165602060](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907165602060.png)
+![image-20200907165602060](Swagger.assets/image-20200907165602060.png)
 
 ------
 
@@ -132,7 +132,7 @@ public class HelloController {
 
 ### 4.2 重启项目访问接口界面
 
-![image-20200907165951426](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907165951426.png)
+![image-20200907165951426](Swagger.assets/image-20200907165951426.png)
 
 -----
 
@@ -194,7 +194,7 @@ public Map<String, Object> save(String id, String name) {
 }
 ```
 
-![image-20200907172500905](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907172500905.png)
+![image-20200907172500905](Swagger.assets/image-20200907172500905.png)
 
 #### 5.3.2 RestFul 风格使用
 
@@ -218,7 +218,7 @@ public Map<String, Object> save(@PathVariable("id") String id,@PathVariable("nam
 }
 ```
 
-![image-20200907172950893](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907172950893.png)
+![image-20200907172950893](Swagger.assets/image-20200907172950893.png)
 
 #### 5.3.3 JSON 格式使用
 
@@ -252,11 +252,11 @@ public Map<String, Object> save2(@RequestBody User user) {
 
 3. 重启项目，打开 UI 界面
 
-![image-20200907174402323](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907174402323.png)
+![image-20200907174402323](Swagger.assets/image-20200907174402323.png)
 
 测试：
 
-![image-20200907174538702](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907174538702.png)
+![image-20200907174538702](Swagger.assets/image-20200907174538702.png)
 
 ### 5.4 @ApiResponses
 
@@ -279,5 +279,5 @@ public Map<String, Object> save2(@RequestBody User user) {
 }
 ```
 
-![image-20200907175213481](/Users/liaozicai/Documents/Java/Note/Swagger/Swagger.assets/image-20200907175213481.png)
+![image-20200907175213481](Swagger.assets/image-20200907175213481.png)
 
