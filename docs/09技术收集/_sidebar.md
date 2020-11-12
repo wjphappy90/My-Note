@@ -36,7 +36,7 @@
 
 [16增加用户信息](./docs/09技术收集/16增加用户信息.md)
 
-[17对象存储 OSS](./docs/09技术收集/17对象存储 OSS.md)
+[17对象存储OSS](./docs/09技术收集/17对象存储OSS.md)
 
 [18EasyExcel](./docs/09技术收集/18EasyExcel.md)
 
