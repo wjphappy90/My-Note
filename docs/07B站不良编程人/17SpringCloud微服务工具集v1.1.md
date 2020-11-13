@@ -2,6 +2,8 @@
 
 - **版本: Hoxton SR6**
 
+  ![maven项目结构](img/maven%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.jpg)![SpringCloud 微服务工具集v1.1](img/SpringCloud%20%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%B7%A5%E5%85%B7%E9%9B%86v1.1.png)
+
 ## 1.什么是微服务
 
 - 官网: https://www.martinfowler.com/articles/microservices.html
