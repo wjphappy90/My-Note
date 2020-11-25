@@ -58,4 +58,6 @@
 
 - [29jqGrid(数据表格)](./docs/07B站不良编程人/29jqGrid(数据表格).md)
 
+- [30SpringBoot-MybatisPlus)](./docs/07B站不良编程人/30SpringBoot-MybatisPlus.md)
+
   
