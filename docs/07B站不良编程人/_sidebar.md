@@ -69,3 +69,9 @@
   [32Mybatis](./docs/07B站不良编程人/32Mybatis.md)
   
   [33Spring](./docs/07B站不良编程人/33Spring.md)
+  
+  [34Mybaits基础-01](./docs/07B站不良编程人/34Mybaits基础-01.md)
+  
+  [34Mybaits基础-02](./docs/07B站不良编程人/34Mybaits基础-02.md)
+  
+  [34Mybaits基础-03](./docs/07B站不良编程人/34Mybaits基础-03.md)
